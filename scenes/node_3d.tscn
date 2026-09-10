@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://k1bymqnw7aw1"]
+
+[ext_resource type="PackedScene" uid="uid://byb8hbl5lhma6" path="res://assets/-Animated-LowPoly-Slime-228941d20482249abbf064037c4e5ac1906cdf4e/scene.gltf" id="1_tyffc"]
+
+[node name="Node3D" type="Node3D" unique_id=674484026]
+
+[node name="Sketchfab_Scene" parent="." unique_id=443188498 instance=ExtResource("1_tyffc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010478735, 1.1920929e-07, 0.10947311)

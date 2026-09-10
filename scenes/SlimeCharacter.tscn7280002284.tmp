@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bo02ei8ll5nk8"]
+
+[ext_resource type="Script" uid="uid://civbll021l8op" path="res://scripts/slime_character.gd" id="1_7p8sq"]
+[ext_resource type="Shader" uid="uid://vdsdv63ttpo0" path="res://assets/shaders/slime_jelly.gdshader" id="2_mvst4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
+radius = 0.4
+height = 0.9
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7p8sq"]
+render_priority = 0
+shader = ExtResource("2_mvst4")
+shader_parameter/albedo_color = Color(0.2, 0.9, 0.45, 0.85)
+shader_parameter/roughness_value = 0.12
+shader_parameter/rim_strength = 0.6
+shader_parameter/idle_amplitude = 0.03
+shader_parameter/idle_frequency = 2.4
+shader_parameter/impact_amplitude = 0.0
+shader_parameter/impact_time = 999.0
+shader_parameter/impact_frequency = 16.0
+shader_parameter/impact_decay = 7.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_1"]
+material = SubResource("ShaderMaterial_7p8sq")
+radius = 0.45
+height = 0.9
+radial_segments = 32
+rings = 24
+
+[node name="SlimeCharacter" type="CharacterBody3D" unique_id=600711847]
+script = ExtResource("1_7p8sq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1529502885]
+shape = SubResource("CapsuleShape3D_1")
+
+[node name="SlimeMesh" type="MeshInstance3D" parent="." unique_id=503149906]
+material_override = SubResource("ShaderMaterial_1")
+mesh = SubResource("SphereMesh_1")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1257035010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1995930432]
+spring_length = 2.2
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1385893001]
+current = true

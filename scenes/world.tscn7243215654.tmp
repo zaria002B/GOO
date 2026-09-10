@@ -28,4 +28,4 @@ transform = Transform3D(13.825908, 0, 0, 0, 0.99999946, 0, 0, 0, 12.701696, 0, 0
 use_collision = true
 
 [node name="SlimeCharacter" parent="." unique_id=600711847 instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7953982, 2.1094682, -0.08072233)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2753315, 2.0574024, 0.5779238)
