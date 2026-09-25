@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dtn7w4x25ntop"]
+
+[ext_resource type="Script" uid="uid://bgv86ano3gdcy" path="res://scripts/slime_driver.gd" id="1_2hd65"]
+[ext_resource type="Script" uid="uid://bvpmifhychtuh" path="res://scripts/slime_body.gd" id="2_wcugo"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_driver"]
+radius = 0.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_slime"]
+radial_segments = 24
+rings = 24
+
+[node name="Slime" type="Node3D" unique_id=1786743797]
+
+[node name="SlimeDriver" type="RigidBody3D" parent="." unique_id=1794592845]
+script = ExtResource("1_2hd65")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SlimeDriver" unique_id=2147137257]
+shape = SubResource("SphereShape3D_driver")
+
+[node name="GroundRay" type="RayCast3D" parent="SlimeDriver" unique_id=75255947]
+target_position = Vector3(0, -0.6, 0)
+
+[node name="CameraPivot" type="Node3D" parent="SlimeDriver" unique_id=403786070]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="SlimeDriver/CameraPivot" unique_id=730055333]
+spring_length = 4.0
+
+[node name="Camera3D" type="Camera3D" parent="SlimeDriver/CameraPivot/SpringArm3D" unique_id=1702533452]
+current = true
+
+[node name="SlimeBody" type="SoftBody3D" parent="." unique_id=1271983213]
+mesh = SubResource("SphereMesh_slime")
+simulation_precision = 6
+damping_coefficient = 0.02
+script = ExtResource("2_wcugo")
