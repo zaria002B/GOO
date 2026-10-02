@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ckp7x86g7bkka"]
 
 [ext_resource type="PackedScene" uid="uid://dtn7w4x25ntop" path="res://scenes/Slime.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://dcqmsgypa08n4" path="res://scenes/static_body_3d.tscn" id="2_rwgxs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e5uuo"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -26,9 +27,8 @@ shadow_enabled = true
 [node name="Camera3D" type="Camera3D" parent="." unique_id=442820683]
 transform = Transform3D(1, 0, 0, 0, 0.9582647, 0.28588244, 0, -0.28588244, 0.9582647, 0, 4.0818686, 7.6970987)
 
-[node name="Slime" parent="." unique_id=1885872555 instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19838953, 2.2748473, 0.13476276)
+[node name="plateform" parent="." unique_id=1103486196 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(12.884607, 0, 0, 0, 1, 0, 0, 0, 11.58463, -0.8671298, 0, 0.270267)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=885028004]
-transform = Transform3D(21.506105, 0, 0, 0, 1.0026497, 0, 0, 0, 13.791288, 0, 0, 0)
-use_collision = true
+[node name="Slime" parent="." unique_id=408823463 instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5746408, 1.5, -1.0015287)

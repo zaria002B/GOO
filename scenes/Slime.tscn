@@ -1,48 +1,21 @@
 [gd_scene format=3 uid="uid://dtn7w4x25ntop"]
 
-[ext_resource type="Script" uid="uid://bgv86ano3gdcy" path="res://scripts/slime_driver.gd" id="1_2hd65"]
-[ext_resource type="Script" uid="uid://bvpmifhychtuh" path="res://scripts/slime_body.gd" id="2_wcugo"]
+[ext_resource type="ArrayMesh" uid="uid://cdjr6oqm2aksr" path="res://assets/mesh.res" id="1_2hd65"]
+[ext_resource type="Script" uid="uid://c6mnb0q2ewus0" path="res://scripts/slime.gd" id="1_15vis"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_driver"]
-radius = 0.22
+[sub_resource type="SphereShape3D" id="SphereShape3D_mq8aq"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_slime"]
-transparency = 1
-albedo_color = Color(0.25, 0.85, 0.45, 0.78)
-roughness = 0.08
-rim_enabled = true
-rim = 0.35
-clearcoat_enabled = true
-clearcoat_roughness = 0.05
+[node name="Slime" type="SoftBody3D" unique_id=408823463]
+mesh = ExtResource("1_2hd65")
+pinned_points = [1339]
+attachments/0/point_index = 1339
+attachments/0/spatial_attachment_path = NodePath("")
+attachments/0/offset = Vector3(0, 0, 0)
+script = ExtResource("1_15vis")
 
-[sub_resource type="SphereMesh" id="SphereMesh_slime"]
-radial_segments = 24
-rings = 24
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=919558594]
+shape = SubResource("SphereShape3D_mq8aq")
+spring_length = 7.5
 
-[node name="Slime" type="Node3D" unique_id=1885872555]
-
-[node name="SlimeDriver" type="RigidBody3D" parent="." unique_id=2119003139]
-script = ExtResource("1_2hd65")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SlimeDriver" unique_id=311108884]
-shape = SubResource("SphereShape3D_driver")
-
-[node name="GroundRay" type="RayCast3D" parent="SlimeDriver" unique_id=801996185]
-target_position = Vector3(0, -0.5, 0)
-
-[node name="CameraPivot" type="Node3D" parent="SlimeDriver" unique_id=1828859892]
-
-[node name="SpringArm3D" type="SpringArm3D" parent="SlimeDriver/CameraPivot" unique_id=73459664]
-spring_length = 4.0
-
-[node name="Camera3D" type="Camera3D" parent="SlimeDriver/CameraPivot/SpringArm3D" unique_id=1886216476]
-current = true
-
-[node name="SlimeBody" type="SoftBody3D" parent="." unique_id=81467189]
-material_override = SubResource("StandardMaterial3D_slime")
-mesh = SubResource("SphereMesh_slime")
-simulation_precision = 7
-linear_stiffness = 0.35
-pressure_coefficient = 1.4
-damping_coefficient = 0.03
-script = ExtResource("2_wcugo")
+[node name="Camera3D" type="Camera3D" parent="." unique_id=275153456]
+transform = Transform3D(1, 0, 0, 0, 0.9665108, 0.25662595, 0, -0.25662595, 0.9665108, 0, 0.8707186, 1.9592023)
