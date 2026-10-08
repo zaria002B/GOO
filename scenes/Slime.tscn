@@ -1,21 +1,21 @@
 [gd_scene format=3 uid="uid://dtn7w4x25ntop"]
 
-[ext_resource type="ArrayMesh" uid="uid://cdjr6oqm2aksr" path="res://assets/mesh.res" id="1_2hd65"]
+[ext_resource type="ArrayMesh" uid="uid://x4jwj0s3jkby" path="res://slime.res" id="1_2hd65"]
 [ext_resource type="Script" uid="uid://c6mnb0q2ewus0" path="res://scripts/slime.gd" id="1_15vis"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_mq8aq"]
 
 [node name="Slime" type="SoftBody3D" unique_id=408823463]
 mesh = ExtResource("1_2hd65")
-pinned_points = [1339]
-attachments/0/point_index = 1339
-attachments/0/spatial_attachment_path = NodePath("")
-attachments/0/offset = Vector3(0, 0, 0)
+total_mass = 10.0
+linear_stiffness = 0.1
+pressure_coefficient = 100.0
 script = ExtResource("1_15vis")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=919558594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6078634, 7.30721)
 shape = SubResource("SphereShape3D_mq8aq")
 spring_length = 7.5
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=275153456]
-transform = Transform3D(1, 0, 0, 0, 0.9665108, 0.25662595, 0, -0.25662595, 0.9665108, 0, 0.8707186, 1.9592023)
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=275153456]
+transform = Transform3D(1, 0, 0, 0, 0.96651083, 0.25662598, 0, -0.25662598, 0.96651083, 0, 0.8707186, 1.9592023)
