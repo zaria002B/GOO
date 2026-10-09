@@ -9,13 +9,15 @@
 mesh = ExtResource("1_2hd65")
 total_mass = 10.0
 linear_stiffness = 0.1
+shrinking_factor = 0.08
 pressure_coefficient = 100.0
 script = ExtResource("1_15vis")
+mouse_sensitivity = 0.0
 
 [node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=919558594]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6078634, 7.30721)
 shape = SubResource("SphereShape3D_mq8aq")
-spring_length = 7.5
+spring_length = 15.5
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=275153456]
-transform = Transform3D(1, 0, 0, 0, 0.96651083, 0.25662598, 0, -0.25662598, 0.96651083, 0, 0.8707186, 1.9592023)
+transform = Transform3D(1, 0, 0, 0, 0.8744061, 0.48519474, 0, -0.48519474, 0.8744061, 0, 2.0636992, -2.6117086)
