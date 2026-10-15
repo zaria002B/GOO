@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dtn7w4x25ntop" path="res://scenes/Slime.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://dcqmsgypa08n4" path="res://scenes/static_body_3d.tscn" id="2_rwgxs"]
+[ext_resource type="Shader" uid="uid://vdsdv63ttpo0" path="res://shaders/slime_jelly.gdshader" id="3_4wyf3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e5uuo"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -15,6 +16,19 @@ background_mode = 2
 sky = SubResource("Sky_nnsk1")
 glow_enabled = true
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k0juu"]
+render_priority = 0
+shader = ExtResource("3_4wyf3")
+shader_parameter/albedo_color = Color(0.2, 0.9, 0.45, 0.85)
+shader_parameter/roughness_value = 0.12
+shader_parameter/rim_strength = 0.6
+shader_parameter/idle_amplitude = 0.03
+shader_parameter/idle_frequency = 2.4
+shader_parameter/impact_amplitude = 0.0
+shader_parameter/impact_time = 999.0
+shader_parameter/impact_frequency = 16.0
+shader_parameter/impact_decay = 7.0
+
 [node name="world" type="Node3D" unique_id=115129535]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=397001997]
@@ -25,18 +39,45 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="plateform" parent="." unique_id=1103486196 instance=ExtResource("2_rwgxs")]
-transform = Transform3D(12.884607, 0, 0, 0, 1, 0, 0, 0, 11.58463, -0.8671298, 0, 0.270267)
+transform = Transform3D(12.884607, 0, 0, 0, 1, 0, 0, 0, 11.58463, -0.8671298, -0.135499, 0.270267)
 
 [node name="plateform2" parent="." unique_id=186094044 instance=ExtResource("2_rwgxs")]
 transform = Transform3D(1, 0, 0, 0, 0.98543876, 0, 0, 0, 8.116026, -0.2782653, 1.5232261, -0.44252002)
 
-[node name="plateform3" parent="." unique_id=530568453 instance=ExtResource("2_rwgxs")]
-transform = Transform3D(1, 0, 0, 0, 1.4161904, 0, 0, 0, 8.116026, 1.7437527, 1.5232261, -0.44252002)
-
 [node name="plateform4" parent="." unique_id=130074145 instance=ExtResource("2_rwgxs")]
-transform = Transform3D(1, 0, 0, 0, 1.9087261, 0, 0, 0, 8.116026, 3.8004336, 1.5232261, -0.44252002)
+transform = Transform3D(1, 0, 0, 0, 23.047918, 0, 0, 0, 11.523738, 7.0975966, 0.349082, 0.2610675)
 
 [node name="Slime" parent="." unique_id=408823463 instance=ExtResource("1_nnsk1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4242046, 2.5996113, -0.72030497)
-linear_stiffness = 0.28
+surface_material_override/0 = SubResource("ShaderMaterial_k0juu")
+shrinking_factor = 0.45
+damping_coefficient = 0.45
 mouse_sensitivity = 0.01
+
+[node name="plateform5" parent="." unique_id=1016712234 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(1, 0, 0, 0, 10.048006, 0, 0, 0, 11.523738, -7.7622094, -4.619244, 0.2610675)
+
+[node name="plateform6" parent="." unique_id=675163617 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(1, 0, 0, 0, 10.048006, 0, 0, 0, 11.523738, -9.704372, -4.664409, 0.2610675)
+
+[node name="plateform3" parent="." unique_id=211193785 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(12.884607, 0, 0, 0, 1, 0, 0, 0, 11.58463, -16.630268, -0.22583199, 0.270267)
+
+[node name="plateform7" parent="." unique_id=2047333432 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(34.831566, 0, 0, 0, 1, 0, 0, 0, 11.58463, -9.04228, -11.562644, 0.270267)
+
+[node name="plateform8" parent="." unique_id=1641107162 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(1, 0, 0, 0, 10.048006, 0, 0, 0, 11.523738, 3.8004336, 5.588404, 0.2610675)
+
+[node name="plateform9" parent="." unique_id=1635410142 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(12.884607, 0, 0, 0, 1, 0, 0, 0, 11.58463, -17.759432, -9.7559805, 0.270267)
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="." unique_id=999966901]
+transform = Transform3D(-0.45980257, 37.95573, 0, -0.88802123, -19.652842, 0, 0, 0, 1, -32.314392, 9.926782, 0)
+use_collision = true
+inner_radius = 0.827
+outer_radius = 1.778
+sides = 30
+
+[node name="plateform10" parent="." unique_id=881025627 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(18.350266, 0, 0, 0, 1, 0, 0, 0, 16.859165, -56.69479, 15.873713, 0.270267)
