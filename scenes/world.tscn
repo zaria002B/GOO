@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dtn7w4x25ntop" path="res://scenes/Slime.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://dcqmsgypa08n4" path="res://scenes/static_body_3d.tscn" id="2_rwgxs"]
-[ext_resource type="Shader" uid="uid://vdsdv63ttpo0" path="res://shaders/slime_jelly.gdshader" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://cmijepqihstis" path="res://scenes/props/big_coaton.tscn" id="4_k0juu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e5uuo"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -15,19 +15,6 @@ sky_material = SubResource("ProceduralSkyMaterial_e5uuo")
 background_mode = 2
 sky = SubResource("Sky_nnsk1")
 glow_enabled = true
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_k0juu"]
-render_priority = 0
-shader = ExtResource("3_4wyf3")
-shader_parameter/albedo_color = Color(0.2, 0.9, 0.45, 0.85)
-shader_parameter/roughness_value = 0.12
-shader_parameter/rim_strength = 0.6
-shader_parameter/idle_amplitude = 0.03
-shader_parameter/idle_frequency = 2.4
-shader_parameter/impact_amplitude = 0.0
-shader_parameter/impact_time = 999.0
-shader_parameter/impact_frequency = 16.0
-shader_parameter/impact_decay = 7.0
 
 [node name="world" type="Node3D" unique_id=115129535]
 
@@ -46,13 +33,6 @@ transform = Transform3D(1, 0, 0, 0, 0.98543876, 0, 0, 0, 8.116026, -0.2782653, 1
 
 [node name="plateform4" parent="." unique_id=130074145 instance=ExtResource("2_rwgxs")]
 transform = Transform3D(1, 0, 0, 0, 23.047918, 0, 0, 0, 11.523738, 7.0975966, 0.349082, 0.2610675)
-
-[node name="Slime" parent="." unique_id=408823463 instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4242046, 2.5996113, -0.72030497)
-surface_material_override/0 = SubResource("ShaderMaterial_k0juu")
-shrinking_factor = 0.45
-damping_coefficient = 0.45
-mouse_sensitivity = 0.01
 
 [node name="plateform5" parent="." unique_id=1016712234 instance=ExtResource("2_rwgxs")]
 transform = Transform3D(1, 0, 0, 0, 10.048006, 0, 0, 0, 11.523738, -7.7622094, -4.619244, 0.2610675)
@@ -81,3 +61,9 @@ sides = 30
 
 [node name="plateform10" parent="." unique_id=881025627 instance=ExtResource("2_rwgxs")]
 transform = Transform3D(18.350266, 0, 0, 0, 1, 0, 0, 0, 16.859165, -56.69479, 15.873713, 0.270267)
+
+[node name="big_coaton" parent="." unique_id=450807907 instance=ExtResource("4_k0juu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0657845, 0.36450005, 1.1287413)
+
+[node name="Slime" parent="." unique_id=408823463 instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9890213, 1.6945009, -1.4361281)

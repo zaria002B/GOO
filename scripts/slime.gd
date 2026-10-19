@@ -9,7 +9,7 @@ extends SoftBody3D
 @export var centre_sample_count: int = 64
 ## How far behind the slime the camera sits. The SpringArm3D decides this,
 ## not the Camera3D's own position, so tune it here (or via Spring Length).
-@export var camera_distance: float = 6.0
+@export var camera_distance: float = 4.0
 ## Lifts the point the camera orbits above the slime's centre.
 @export var camera_height: float = 3
 
@@ -333,13 +333,13 @@ func get_centre_approx() -> Vector3:
 		centre_point += get_point_transform(i)
 		sampled += 1
 	return centre_point / maxi(sampled, 1)
-
-
-func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		spring_arm_3d.rotation.x -= event.relative.y * mouse_sensitivity
-		spring_arm_3d.rotation.x = clampf(spring_arm_3d.rotation.x, -tilt_limit, tilt_limit)
-		spring_arm_3d.rotation.y -= event.relative.x * mouse_sensitivity
+	
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			spring_arm_3d.rotation.x -= event.relative.y * mouse_sensitivity
+			spring_arm_3d.rotation.x = clampf(spring_arm_3d.rotation.x,-tilt_limit,tilt_limit)
+			spring_arm_3d.rotation.y -= event.relative.x * mouse_sensitivity
 	elif event.is_action_pressed("ui_cancel"):
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

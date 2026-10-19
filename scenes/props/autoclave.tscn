@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c0grja7abax20"]
+
+[ext_resource type="PackedScene" uid="uid://bruv051dx41ie" path="res://assets/glb_props/autoclave.glb" id="1_uoc7c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ty8n7"]
+size = Vector3(1.5, 1.56, 1.6200001)
+
+[node name="autoclave" type="StaticBody3D" unique_id=797818803]
+
+[node name="Visual" type="Node3D" parent="." unique_id=1232291573 instance=ExtResource("1_uoc7c")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=114617797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78, -0.5874)
+shape = SubResource("BoxShape3D_ty8n7")

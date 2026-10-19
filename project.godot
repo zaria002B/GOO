@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="goo"
-run/main_scene="uid://ckp7x86g7bkka"
+run/main_scene="uid://chsynrchgim2p"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

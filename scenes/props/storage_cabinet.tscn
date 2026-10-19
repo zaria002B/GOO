@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c8hg65kr04rwq"]
+
+[ext_resource type="PackedScene" uid="uid://brndbeuepq6u2" path="res://assets/glb_props/storage_cabinet.glb" id="1_pwwsp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qbc31"]
+size = Vector3(2.4, 5.3999996, 1.3499999)
+
+[node name="storage_cabinet" type="StaticBody3D" unique_id=660380203]
+
+[node name="Visual" type="Node3D" parent="." unique_id=1523742628 instance=ExtResource("1_pwwsp")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1563919423]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028333336, 2.6999998, -0.3889583)
+shape = SubResource("BoxShape3D_qbc31")
