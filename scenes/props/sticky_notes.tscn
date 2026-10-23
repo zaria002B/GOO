@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://ce7x1en5v85jd"]
 
-[ext_resource type="PackedScene" uid="uid://be5shmd0ggmwu" path="res://assets/glb_props/sticky_notes.glb" id="1_ethem"]
+[ext_resource type="PackedScene" uid="uid://cbgpgy5s8frsq" path="res://assets/glb_props/sticky_notes.glb" id="1_ethem"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_amysr"]
-points = PackedVector3Array(-0.026714783, 1.3411045e-07, 0.029839844, -0.06799185, 0.53645897, 0.029548734, -0.021177452, 6.5041415e-05, -0.48488796, 0.06799221, 0.23418568, 0.47178376, 0.017477375, 0.238859, 0.74355894, -0.0421421, 0.5211409, 0.72754645, -0.058687538, 0.6630931, -0.40220547, -0.06245452, 0.5365888, -0.48517907, -0.04135676, 0.65056604, 0.11732617, -0.026981, 0.6205139, -0.743562, 0.024532149, 0.2663148, -0.69479674, 0.008372728, 0.5164675, 0.45577133, -0.0064156707, 0.64271224, -0.22635949)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ethem"]
+points = PackedVector3Array(-0.14158835, 7.1078534e-07, 0.15815116, -0.3603568, 2.8432324, 0.15660828, -0.112240486, 0.00034471948, -2.569906, 0.36035872, 1.2411841, 2.500454, 0.09263008, 1.2659527, 3.9408624, -0.22335313, 2.7620466, 3.855996, -0.31104395, 3.5143936, -2.1316888, -0.33100897, 2.8439205, -2.571449, -0.21919082, 3.448, 0.6218287, -0.14299929, 3.288724, -3.9408784, 0.13002038, 1.4114684, -3.6824226, 0.044375457, 2.7372777, 2.415588, -0.034003053, 3.406375, -1.1997052)
 
-[node name="sticky_notes" type="StaticBody3D" unique_id=687900433]
+[node name="sticky_notes" type="StaticBody3D" unique_id=813654879]
 
-[node name="Visual" type="Node3D" parent="." unique_id=1910776474 instance=ExtResource("1_ethem")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+[node name="Visual" type="Node3D" parent="." unique_id=1176189363 instance=ExtResource("1_ethem")]
+transform = Transform3D(15.9, 0, 0, 0, 15.9, 0, 0, 0, 15.9, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2141121702]
-shape = SubResource("ConvexPolygonShape3D_amysr")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=962786542]
+shape = SubResource("ConvexPolygonShape3D_ethem")

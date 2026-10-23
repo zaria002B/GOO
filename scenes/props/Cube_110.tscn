@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://by0sdcicnkltk"]
+
+[ext_resource type="PackedScene" uid="uid://drgbicqehkv07" path="res://assets/glb_props/Cube_110.glb" id="1_8efna"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2gg5g"]
+points = PackedVector3Array(0.91801924, 5.4939394, -0.78420264, 0.08123418, 5.8313165, -0.17873795, 0.19481832, 5.8313165, 0.017965287, 0.91801864, 5.4939394, 0.7843556, 0.91801924, 3.2915683, -0.78420264, -0.918019, 5.4939394, -0.78420335, -0.14593424, 5.8313165, -0.17873804, 0.08123404, 5.8313165, 0.2146684, -0.9180196, 5.4939394, 0.78435487, 0.91801864, 3.2915683, 0.7843556, 0.65526587, 0, -0.73736864, -0.918019, 3.2915683, -0.78420335, -0.2595185, 5.8313165, 0.017965125, -0.14593436, 5.8313165, 0.2146683, -0.9180196, 3.2915683, 0.78435487, 0.65526533, 0, 0.752109, -0.64070827, 0, -0.7373691, -0.6407088, 0, 0.7521085)
+
+[node name="Cube_110" type="StaticBody3D" unique_id=1008229781]
+
+[node name="Visual" parent="." unique_id=1373144802 instance=ExtResource("1_8efna")]
+transform = Transform3D(15.9, 0, 0, 0, 15.9, 0, 0, 0, 15.9, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=207011249]
+shape = SubResource("ConvexPolygonShape3D_2gg5g")

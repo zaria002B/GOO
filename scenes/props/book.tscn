@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c2wukko3omn2p"]
+
+[ext_resource type="PackedScene" uid="uid://m4hhcs2n3iyi" path="res://assets/glb_props/book.glb" id="1_s0fqw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dh7dh"]
+points = PackedVector3Array(0.022137374, 0.28580734, 0.113023646, 0.022137374, 0.28580734, -0.10048191, -0.029619604, 0.28580734, 0.113023646, 0.022137374, 0.0011473559, 0.113002114, 0.014416385, 0.28580734, -0.106941335, 0.022137374, 0.0011473559, -0.10048191, -0.029619604, 0.28580734, -0.10048191, -0.029619604, 0.0011473559, 0.113002114, -0.021513578, 0.28580734, -0.106941335, 0.014649432, 0.0011473559, -0.10416378, 0.012638126, 0.19327055, -0.106941335, -0.021989807, 0.28580734, -0.1065753, -0.02958414, 0.25457165, -0.10106326, -0.029619604, 0.0011473559, -0.10048191, -0.02152371, 0.25465524, -0.106941335, -0.021594638, 0.0011473559, -0.106941335, -0.022618024, 0.0011473559, -0.10612314)
+
+[node name="book" type="RigidBody3D" unique_id=725894508]
+mass = 5.0
+
+[node name="book2" parent="." unique_id=1811263747 instance=ExtResource("1_s0fqw")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="book" parent="book2" index="0" unique_id=511451310]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0.0035579354, 0.0034760088, 0.0020535192)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=998081112]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0.0035579354, 0.0034760088, 0.0020535192)
+shape = SubResource("ConvexPolygonShape3D_dh7dh")
+
+[editable path="book2"]

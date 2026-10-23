@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cr62g4jcrd88n" path="res://assets/glb_props/syringe.glb" id="1_ddchj"]
 
-[node name="syringe" type="Node3D" unique_id=1315756492]
+[node name="syringe" type="Node3D" unique_id=648847682]
 
-[node name="Visual" type="Node3D" parent="." unique_id=1065747793 instance=ExtResource("1_ddchj")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+[node name="Visual" type="Node3D" parent="." unique_id=325924890 instance=ExtResource("1_ddchj")]
+transform = Transform3D(15.9, 0, 0, 0, 15.9, 0, 0, 0, 15.9, 0, 0, 0)

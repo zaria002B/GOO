@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="goo"
-run/main_scene="uid://chsynrchgim2p"
+run/main_scene="uid://b75ssyjrx681f"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://pyhaq5bwv16y"
 
 [display]
 

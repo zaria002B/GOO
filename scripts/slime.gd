@@ -9,9 +9,15 @@ extends SoftBody3D
 @export var centre_sample_count: int = 64
 ## How far behind the slime the camera sits. The SpringArm3D decides this,
 ## not the Camera3D's own position, so tune it here (or via Spring Length).
-@export var camera_distance: float = 4.0
+@export var camera_distance: float = 6.0
 ## Lifts the point the camera orbits above the slime's centre.
 @export var camera_height: float = 3
+## Prints the slime's resting size to the Output panel 2.5 s after the game
+## starts, so you can size the world around it (see SLIME_WIDTH in build_props.gd).
+@export var report_size_on_start: bool = true
+
+## A lab rat is about this wide (metres). Used only for the size report.
+const RAT_WIDTH := 0.2
 
 @export_group("Jump")
 ## Upward impulse applied on jump. Tune this by feel (see notes): too low =
@@ -115,6 +121,9 @@ func _ready() -> void:
 	if mesh != null and mesh.get_surface_count() > 0:
 		number_of_points = mesh.surface_get_array_len(0)
 	_sample_stride = maxi(1, ceili(float(number_of_points) / float(centre_sample_count)))
+
+	if report_size_on_start:
+		get_tree().create_timer(2.5).timeout.connect(report_size)
 
 
 func _physics_process(delta: float) -> void:
@@ -326,6 +335,22 @@ func is_grounded() -> bool:
 	return not space.intersect_ray(query).is_empty()
 
 
+## Prints how big the slime is and what world scale makes it rat-sized.
+func report_size() -> void:
+	if number_of_points == 0:
+		return
+	var low := get_point_transform(0)
+	var high := low
+	for i in range(1, number_of_points):
+		var p := get_point_transform(i)
+		low = low.min(p)
+		high = high.max(p)
+	var extent := high - low
+	var width := (extent.x + extent.z) / 2.0
+	print("[Slime] resting size: %.2f m wide x %.2f m tall" % [width, extent.y])
+	print("[Slime] for a rat-sized slime (%.1f m wide): set SLIME_WIDTH = %.2f in build_props.gd  (props then scale x%.1f)" % [RAT_WIDTH, width, width / RAT_WIDTH])
+
+
 func get_centre_approx() -> Vector3:
 	var centre_point := Vector3.ZERO
 	var sampled: int = 0
@@ -333,13 +358,13 @@ func get_centre_approx() -> Vector3:
 		centre_point += get_point_transform(i)
 		sampled += 1
 	return centre_point / maxi(sampled, 1)
-	
-func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			spring_arm_3d.rotation.x -= event.relative.y * mouse_sensitivity
-			spring_arm_3d.rotation.x = clampf(spring_arm_3d.rotation.x,-tilt_limit,tilt_limit)
-			spring_arm_3d.rotation.y -= event.relative.x * mouse_sensitivity
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		spring_arm_3d.rotation.x -= event.relative.y * mouse_sensitivity
+		spring_arm_3d.rotation.x = clampf(spring_arm_3d.rotation.x, -tilt_limit, tilt_limit)
+		spring_arm_3d.rotation.y -= event.relative.x * mouse_sensitivity
 	elif event.is_action_pressed("ui_cancel"):
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

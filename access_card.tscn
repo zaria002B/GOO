@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://h82dvpumxt45"]
+
+[ext_resource type="Script" uid="uid://cjsafmppiuiy0" path="res://scripts/access_card.gd" id="1_nkv4a"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mq8aq"]
+size = Vector3(0.45, 0.08, 0.65)
+
+[node name="AccessCard" type="Node3D" unique_id=1400560310]
+script = ExtResource("1_nkv4a")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1217138602]
+mesh = SubResource("BoxMesh_mq8aq")

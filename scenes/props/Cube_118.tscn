@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dleejdo81pxkw"]
+
+[ext_resource type="PackedScene" uid="uid://deadr2m4jogh8" path="res://assets/glb_props/Cube_118.glb" id="1_uyx3i"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pa6uc"]
+points = PackedVector3Array(-0.33110264, 0.662209, 0.33110508, 0.33110636, 0.662209, 0.33110467, -0.33110306, 0.662209, -0.3311039, -0.33110264, 0, 0.33110508, 0.33110636, 0, 0.33110467, 0.33110595, 0.662209, -0.3311043, -0.33110306, 0, -0.3311039, 0.33110595, 0, -0.3311043)
+
+[node name="Cube_118" type="StaticBody3D" unique_id=1629874855]
+
+[node name="Visual" parent="." unique_id=1011116514 instance=ExtResource("1_uyx3i")]
+transform = Transform3D(15.9, 0, 0, 0, 15.9, 0, 0, 0, 15.9, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=736024843]
+shape = SubResource("ConvexPolygonShape3D_pa6uc")

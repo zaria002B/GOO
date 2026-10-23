@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://cqno02ry4eyxg"]
 
-[ext_resource type="PackedScene" uid="uid://8ewu7lnlt6sw" path="res://assets/glb_props/weight_set.glb" id="1_uiagr"]
+[ext_resource type="PackedScene" uid="uid://c7tyjeiqt5mlw" path="res://assets/glb_props/weight_set.glb" id="1_uiagr"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ads82"]
-points = PackedVector3Array(0.5204569, 0.019644264, -0.35835353, 0.41836265, 0.018714357, -0.38031918, -0.19359148, 0.013309279, -0.5123222, -0.09159914, 0.0142391855, -0.49035653, 0.31025693, 0.52586186, -0.3946491, 0.5142416, 0.5276635, -0.35061324, 0.369659, 0.0072067715, 0.3410951, -0.29558384, 0.012437493, -0.5342878, -0.44638172, 0, 0.16505621, -0.30179918, 0.52045673, -0.52665216, 0.055326954, 0.5692768, -0.27844042, -0.091701016, 0.593745, -0.19716758, 0.13806202, 0.55062056, 0.17248271, 0.29548278, 0.51098335, 0.53428817, 0.36884388, 0.070672855, 0.34203655, -0.5204561, 0.50377655, 0.35814464, -0.41846377, 0.5046483, 0.38021484, -0.18523645, 0.57659984, -0.14696042, 0.1934904, 0.5101116, 0.5122179)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uiagr"]
+points = PackedVector3Array(2.7584217, 0.1041146, -1.8992736, 2.2173219, 0.09918609, -2.0156915, -1.0260348, 0.07053918, -2.7153075, -0.48547542, 0.07546768, -2.5988896, 1.6443617, 2.7870677, -2.0916402, 2.7254806, 2.7966166, -1.8582501, 1.9591926, 0.03819589, 1.807804, -1.5665942, 0.06591871, -2.8317254, -2.365823, 0, 0.87479794, -1.5995356, 2.7584207, -2.7912562, 0.29323286, 3.017167, -1.4757342, -0.48601538, 3.1468482, -1.0449882, 0.7317287, 2.918289, 0.91415834, 1.5660588, 2.7082117, 2.8317273, 1.9548725, 0.3745661, 1.8127936, -2.7584174, 2.6700158, 1.8981665, -2.2178578, 2.6746361, 2.0151386, -0.98175323, 3.055979, -0.7788902, 1.0254991, 2.703591, 2.7147546)
 
-[node name="weight_set" type="StaticBody3D" unique_id=384772243]
+[node name="weight_set" type="StaticBody3D" unique_id=39772136]
 
-[node name="Visual" type="Node3D" parent="." unique_id=372317375 instance=ExtResource("1_uiagr")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+[node name="Visual" type="Node3D" parent="." unique_id=222041249 instance=ExtResource("1_uiagr")]
+transform = Transform3D(15.9, 0, 0, 0, 15.9, 0, 0, 0, 15.9, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1238345479]
-shape = SubResource("ConvexPolygonShape3D_ads82")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1478252412]
+shape = SubResource("ConvexPolygonShape3D_uiagr")

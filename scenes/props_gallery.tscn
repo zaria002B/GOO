@@ -1,913 +1,900 @@
 [gd_scene format=3 uid="uid://cm3d8rtg4p6e5"]
 
-[ext_resource type="PackedScene" uid="uid://cdwah7iuhnfi" path="res://scenes/props/2_books.tscn" id="1_52b0c"]
-[ext_resource type="PackedScene" uid="uid://dr0e5l40uv3lp" path="res://scenes/props/3_books.tscn" id="2_oi4am"]
-[ext_resource type="PackedScene" uid="uid://bhr43kuq8lysx" path="res://scenes/props/4floor.tscn" id="3_renov"]
-[ext_resource type="PackedScene" uid="uid://mh5yl7nch63m" path="res://scenes/props/alembic.tscn" id="4_t03u8"]
-[ext_resource type="PackedScene" uid="uid://c60vc5coyfo8e" path="res://scenes/props/analysis_console.tscn" id="5_xwrl0"]
-[ext_resource type="PackedScene" uid="uid://cooopnh3xjis1" path="res://scenes/props/another_corton.tscn" id="6_5xqxs"]
-[ext_resource type="PackedScene" uid="uid://c0grja7abax20" path="res://scenes/props/autoclave.tscn" id="7_2uu05"]
-[ext_resource type="PackedScene" uid="uid://dhvwhgdeius8h" path="res://scenes/props/balance_scale.tscn" id="8_ujf7k"]
-[ext_resource type="PackedScene" uid="uid://cmijepqihstis" path="res://scenes/props/big_coaton.tscn" id="9_qv35x"]
-[ext_resource type="PackedScene" uid="uid://cptsq4nl00ljg" path="res://scenes/props/biohazard_bin.tscn" id="10_3ws52"]
-[ext_resource type="PackedScene" uid="uid://dy7vjr0wvfva7" path="res://scenes/props/book_set.tscn" id="11_r6gxi"]
-[ext_resource type="PackedScene" uid="uid://5f44d80itsjy" path="res://scenes/props/bunsen_burner.tscn" id="12_ftlk1"]
-[ext_resource type="PackedScene" uid="uid://ce3fpq2n05r0t" path="res://scenes/props/camera.tscn" id="13_e3y2f"]
-[ext_resource type="PackedScene" uid="uid://bphqiitjxkc48" path="res://scenes/props/carpet.tscn" id="14_kpskb"]
-[ext_resource type="PackedScene" uid="uid://digigmg4xqn46" path="res://scenes/props/carton.tscn" id="15_cskva"]
-[ext_resource type="PackedScene" uid="uid://r872d6rypdbw" path="res://scenes/props/ceiling_lamp.tscn" id="16_bu03i"]
-[ext_resource type="PackedScene" uid="uid://x66gmuofmty6" path="res://scenes/props/centrifuge.tscn" id="17_txb5g"]
-[ext_resource type="PackedScene" uid="uid://1i2ihqubbaxb" path="res://scenes/props/chair.tscn" id="18_44y7f"]
-[ext_resource type="PackedScene" uid="uid://f5vwtb8potux" path="res://scenes/props/chemical_vat.tscn" id="19_kxpta"]
-[ext_resource type="PackedScene" uid="uid://chyl7m5xhcrsq" path="res://scenes/props/computer.tscn" id="20_t0y2m"]
-[ext_resource type="PackedScene" uid="uid://c6irlc7cjy0" path="res://scenes/props/container.tscn" id="21_shk28"]
-[ext_resource type="PackedScene" uid="uid://qw1lhj2mydrt" path="res://scenes/props/covers.tscn" id="22_yhyl1"]
-[ext_resource type="PackedScene" uid="uid://c70qkl68vb28s" path="res://scenes/props/coverset.tscn" id="23_ujegq"]
-[ext_resource type="PackedScene" uid="uid://c2vbnhhcnw5gh" path="res://scenes/props/cryo_pod.tscn" id="24_lv01e"]
-[ext_resource type="PackedScene" uid="uid://b7fuw1u5x0o53" path="res://scenes/props/cryo_rack.tscn" id="25_8h0de"]
-[ext_resource type="PackedScene" uid="uid://4pivc1i6q58u" path="res://scenes/props/cup.tscn" id="26_3800o"]
-[ext_resource type="PackedScene" uid="uid://bhn02mjbhwx0n" path="res://scenes/props/cylinder.tscn" id="27_5gqru"]
-[ext_resource type="PackedScene" uid="uid://kt64wgvfqppm" path="res://scenes/props/dropper_bottles.tscn" id="28_ehuuj"]
-[ext_resource type="PackedScene" uid="uid://cu87e6ppyutrf" path="res://scenes/props/drum.tscn" id="29_y8xib"]
-[ext_resource type="PackedScene" uid="uid://dj56uh60h6sr3" path="res://scenes/props/dunbell.tscn" id="30_tf4ka"]
-[ext_resource type="PackedScene" uid="uid://dognwcgtaigcy" path="res://scenes/props/file.tscn" id="31_ut6t2"]
-[ext_resource type="PackedScene" uid="uid://3amcgu03y5o5" path="res://scenes/props/fire_extinguisher.tscn" id="32_jc513"]
-[ext_resource type="PackedScene" uid="uid://jqyx3fja5s22" path="res://scenes/props/first_aid_kit.tscn" id="33_po0h4"]
-[ext_resource type="PackedScene" uid="uid://bdey04rme8cgu" path="res://scenes/props/flask_beaker.tscn" id="34_puwu5"]
-[ext_resource type="PackedScene" uid="uid://dkgq4iah7vr3m" path="res://scenes/props/funnel_stand.tscn" id="35_6r5c2"]
-[ext_resource type="PackedScene" uid="uid://bfrl7t8gxdih1" path="res://scenes/props/gas_cylinder.tscn" id="36_1gpin"]
-[ext_resource type="PackedScene" uid="uid://big37m8fnpdq3" path="res://scenes/props/half_dumbell.tscn" id="37_cpmgu"]
-[ext_resource type="PackedScene" uid="uid://cb44vgp2ea8ur" path="res://scenes/props/hazard_sign.tscn" id="38_ygmrv"]
-[ext_resource type="PackedScene" uid="uid://dgdjmf4pg6b0w" path="res://scenes/props/head_phones.tscn" id="39_yng0r"]
-[ext_resource type="PackedScene" uid="uid://blqk3breeyn1e" path="res://scenes/props/hot_plate.tscn" id="40_so46v"]
-[ext_resource type="PackedScene" uid="uid://104td7vse7q7" path="res://scenes/props/jetpack.tscn" id="41_ws1pw"]
-[ext_resource type="PackedScene" uid="uid://dfjcglerbci6e" path="res://scenes/props/lab_bench.tscn" id="42_lea5d"]
-[ext_resource type="PackedScene" uid="uid://b45xwtdxqxg8w" path="res://scenes/props/lab_stool.tscn" id="43_802qo"]
-[ext_resource type="PackedScene" uid="uid://bhsywjucyvwr4" path="res://scenes/props/lamp.tscn" id="44_nhteb"]
-[ext_resource type="PackedScene" uid="uid://cbwnglxp6e5xl" path="res://scenes/props/laptop.tscn" id="45_rqdni"]
-[ext_resource type="PackedScene" uid="uid://d0xg5752ilfod" path="res://scenes/props/long_light.tscn" id="46_o2sql"]
-[ext_resource type="PackedScene" uid="uid://g2niuiq2vc3v" path="res://scenes/props/mortar_pestle.tscn" id="47_whnb1"]
-[ext_resource type="PackedScene" uid="uid://dydql2t5iysxl" path="res://scenes/props/packed_shelf.tscn" id="48_n0o68"]
-[ext_resource type="PackedScene" uid="uid://cwik6k8b6j8i" path="res://scenes/props/petri_stack.tscn" id="49_h75uk"]
-[ext_resource type="PackedScene" uid="uid://bsyx1mqhpd05u" path="res://scenes/props/pipe.tscn" id="50_7m4fk"]
-[ext_resource type="PackedScene" uid="uid://cs3ue048bikdp" path="res://scenes/props/plant.tscn" id="51_wb80m"]
-[ext_resource type="PackedScene" uid="uid://cre4128w40hta" path="res://scenes/props/plug.tscn" id="52_1mgs3"]
-[ext_resource type="PackedScene" uid="uid://bqsl7sacawb25" path="res://scenes/props/pot.tscn" id="53_b7fkj"]
-[ext_resource type="PackedScene" uid="uid://b8e4eh6gcye4d" path="res://scenes/props/reader.tscn" id="54_p7bef"]
-[ext_resource type="PackedScene" uid="uid://bm13mrx8qf5pt" path="res://scenes/props/secure_container.tscn" id="55_qk354"]
-[ext_resource type="PackedScene" uid="uid://bhwjk2ejfkrxd" path="res://scenes/props/shelf.tscn" id="56_umeve"]
-[ext_resource type="PackedScene" uid="uid://bj61l2igrb552" path="res://scenes/props/shelf_unit.tscn" id="57_8nn7y"]
-[ext_resource type="PackedScene" uid="uid://dm2yjc802asr8" path="res://scenes/props/single_shelf.tscn" id="58_6nhwa"]
-[ext_resource type="PackedScene" uid="uid://83pvjdsclu1t" path="res://scenes/props/single_tile.tscn" id="59_qmktk"]
-[ext_resource type="PackedScene" uid="uid://da05cesh4nk72" path="res://scenes/props/something.tscn" id="60_wtu4n"]
-[ext_resource type="PackedScene" uid="uid://cf4hssxfoyi1p" path="res://scenes/props/specimen_canister.tscn" id="61_k3jmf"]
-[ext_resource type="PackedScene" uid="uid://bn52qh2rixoxa" path="res://scenes/props/specimen_jar.tscn" id="62_r5uiw"]
-[ext_resource type="PackedScene" uid="uid://bc46ro0v3djgy" path="res://scenes/props/square_container.tscn" id="63_2ijww"]
-[ext_resource type="PackedScene" uid="uid://dj0hqmjrkr8iq" path="res://scenes/props/step.tscn" id="64_nwfyf"]
-[ext_resource type="PackedScene" uid="uid://ce7x1en5v85jd" path="res://scenes/props/sticky_notes.tscn" id="65_02v53"]
-[ext_resource type="PackedScene" uid="uid://bc7ocptv40cx0" path="res://scenes/props/stool.tscn" id="66_38gtn"]
-[ext_resource type="PackedScene" uid="uid://c8hg65kr04rwq" path="res://scenes/props/storage_cabinet.tscn" id="67_p1xj5"]
-[ext_resource type="PackedScene" uid="uid://e6gudcipd4n2" path="res://scenes/props/syringe.tscn" id="68_vdsao"]
-[ext_resource type="PackedScene" uid="uid://db4rw010kyqj3" path="res://scenes/props/test_tube_rack.tscn" id="69_sko43"]
-[ext_resource type="PackedScene" uid="uid://dccqmivldgh5b" path="res://scenes/props/tiles.tscn" id="70_xhfce"]
-[ext_resource type="PackedScene" uid="uid://ythp01wn06cj" path="res://scenes/props/titener.tscn" id="71_qp5ah"]
-[ext_resource type="PackedScene" uid="uid://ib5wcd8dtoer" path="res://scenes/props/tools_set.tscn" id="72_rxcqi"]
-[ext_resource type="PackedScene" uid="uid://ck1ex7r2t1khw" path="res://scenes/props/vent.tscn" id="73_ikf8g"]
-[ext_resource type="PackedScene" uid="uid://dnsbwp1g8cwq4" path="res://scenes/props/vitals_console.tscn" id="74_xkais"]
-[ext_resource type="PackedScene" uid="uid://di5dcp2sfctqj" path="res://scenes/props/wall_slelf.tscn" id="75_ddh7f"]
-[ext_resource type="PackedScene" uid="uid://cqno02ry4eyxg" path="res://scenes/props/weight_set.tscn" id="76_1gifs"]
-[ext_resource type="PackedScene" uid="uid://beiyt3fl4a3oh" path="res://scenes/props/weird_wall.tscn" id="77_3idg4"]
-[ext_resource type="PackedScene" uid="uid://v1o33ubsdlys" path="res://scenes/props/what is this.tscn" id="78_me0th"]
-[ext_resource type="PackedScene" uid="uid://d16mgv6mgov0i" path="res://scenes/props/what_is_this.tscn" id="79_nxn7y"]
-[ext_resource type="PackedScene" uid="uid://dtn7w4x25ntop" path="res://scenes/Slime.tscn" id="80_i8yk6"]
-[ext_resource type="ArrayMesh" uid="uid://x4jwj0s3jkby" path="res://slime.res" id="81_xyofx"]
-[ext_resource type="Script" uid="uid://c6mnb0q2ewus0" path="res://scripts/slime.gd" id="82_hpcpb"]
+[ext_resource type="PackedScene" uid="uid://cdwah7iuhnfi" path="res://scenes/props/2_books.tscn" id="1_s31uy"]
+[ext_resource type="PackedScene" uid="uid://dr0e5l40uv3lp" path="res://scenes/props/3_books.tscn" id="2_52b0c"]
+[ext_resource type="PackedScene" uid="uid://bhr43kuq8lysx" path="res://scenes/props/4floor.tscn" id="3_oi4am"]
+[ext_resource type="PackedScene" uid="uid://mh5yl7nch63m" path="res://scenes/props/alembic.tscn" id="4_renov"]
+[ext_resource type="PackedScene" uid="uid://c60vc5coyfo8e" path="res://scenes/props/analysis_console.tscn" id="5_t03u8"]
+[ext_resource type="PackedScene" uid="uid://cooopnh3xjis1" path="res://scenes/props/another_corton.tscn" id="6_xwrl0"]
+[ext_resource type="PackedScene" uid="uid://c0grja7abax20" path="res://scenes/props/autoclave.tscn" id="7_5xqxs"]
+[ext_resource type="PackedScene" uid="uid://dhvwhgdeius8h" path="res://scenes/props/balance_scale.tscn" id="8_2uu05"]
+[ext_resource type="PackedScene" uid="uid://cmijepqihstis" path="res://scenes/props/big_coaton.tscn" id="9_ujf7k"]
+[ext_resource type="PackedScene" uid="uid://cptsq4nl00ljg" path="res://scenes/props/biohazard_bin.tscn" id="10_qv35x"]
+[ext_resource type="PackedScene" uid="uid://dy7vjr0wvfva7" path="res://scenes/props/book_set.tscn" id="11_3ws52"]
+[ext_resource type="PackedScene" uid="uid://5f44d80itsjy" path="res://scenes/props/bunsen_burner.tscn" id="12_r6gxi"]
+[ext_resource type="PackedScene" uid="uid://ce3fpq2n05r0t" path="res://scenes/props/camera.tscn" id="13_ftlk1"]
+[ext_resource type="PackedScene" uid="uid://bphqiitjxkc48" path="res://scenes/props/carpet.tscn" id="14_e3y2f"]
+[ext_resource type="PackedScene" uid="uid://digigmg4xqn46" path="res://scenes/props/carton.tscn" id="15_kpskb"]
+[ext_resource type="PackedScene" uid="uid://r872d6rypdbw" path="res://scenes/props/ceiling_lamp.tscn" id="16_cskva"]
+[ext_resource type="PackedScene" uid="uid://x66gmuofmty6" path="res://scenes/props/centrifuge.tscn" id="17_bu03i"]
+[ext_resource type="PackedScene" uid="uid://1i2ihqubbaxb" path="res://scenes/props/chair.tscn" id="18_txb5g"]
+[ext_resource type="PackedScene" uid="uid://f5vwtb8potux" path="res://scenes/props/chemical_vat.tscn" id="19_44y7f"]
+[ext_resource type="PackedScene" uid="uid://chyl7m5xhcrsq" path="res://scenes/props/computer.tscn" id="20_kxpta"]
+[ext_resource type="PackedScene" uid="uid://c6irlc7cjy0" path="res://scenes/props/container.tscn" id="21_t0y2m"]
+[ext_resource type="PackedScene" uid="uid://qw1lhj2mydrt" path="res://scenes/props/covers.tscn" id="22_shk28"]
+[ext_resource type="PackedScene" uid="uid://c70qkl68vb28s" path="res://scenes/props/coverset.tscn" id="23_yhyl1"]
+[ext_resource type="PackedScene" uid="uid://c2vbnhhcnw5gh" path="res://scenes/props/cryo_pod.tscn" id="24_ujegq"]
+[ext_resource type="PackedScene" uid="uid://b7fuw1u5x0o53" path="res://scenes/props/cryo_rack.tscn" id="25_lv01e"]
+[ext_resource type="PackedScene" uid="uid://4pivc1i6q58u" path="res://scenes/props/cup.tscn" id="26_8h0de"]
+[ext_resource type="PackedScene" uid="uid://bhn02mjbhwx0n" path="res://scenes/props/cylinder.tscn" id="27_3800o"]
+[ext_resource type="PackedScene" uid="uid://kt64wgvfqppm" path="res://scenes/props/dropper_bottles.tscn" id="28_5gqru"]
+[ext_resource type="PackedScene" uid="uid://cu87e6ppyutrf" path="res://scenes/props/drum.tscn" id="29_ehuuj"]
+[ext_resource type="PackedScene" uid="uid://dj56uh60h6sr3" path="res://scenes/props/dunbell.tscn" id="30_y8xib"]
+[ext_resource type="PackedScene" uid="uid://dognwcgtaigcy" path="res://scenes/props/file.tscn" id="31_tf4ka"]
+[ext_resource type="PackedScene" uid="uid://3amcgu03y5o5" path="res://scenes/props/fire_extinguisher.tscn" id="32_ut6t2"]
+[ext_resource type="PackedScene" uid="uid://jqyx3fja5s22" path="res://scenes/props/first_aid_kit.tscn" id="33_jc513"]
+[ext_resource type="PackedScene" uid="uid://bdey04rme8cgu" path="res://scenes/props/flask_beaker.tscn" id="34_po0h4"]
+[ext_resource type="PackedScene" uid="uid://dkgq4iah7vr3m" path="res://scenes/props/funnel_stand.tscn" id="35_puwu5"]
+[ext_resource type="PackedScene" uid="uid://bfrl7t8gxdih1" path="res://scenes/props/gas_cylinder.tscn" id="36_6r5c2"]
+[ext_resource type="PackedScene" uid="uid://big37m8fnpdq3" path="res://scenes/props/half_dumbell.tscn" id="37_1gpin"]
+[ext_resource type="PackedScene" uid="uid://cb44vgp2ea8ur" path="res://scenes/props/hazard_sign.tscn" id="38_cpmgu"]
+[ext_resource type="PackedScene" uid="uid://dgdjmf4pg6b0w" path="res://scenes/props/head_phones.tscn" id="39_ygmrv"]
+[ext_resource type="PackedScene" uid="uid://blqk3breeyn1e" path="res://scenes/props/hot_plate.tscn" id="40_yng0r"]
+[ext_resource type="PackedScene" uid="uid://104td7vse7q7" path="res://scenes/props/jetpack.tscn" id="41_so46v"]
+[ext_resource type="PackedScene" uid="uid://dfjcglerbci6e" path="res://scenes/props/lab_bench.tscn" id="42_ws1pw"]
+[ext_resource type="PackedScene" uid="uid://b45xwtdxqxg8w" path="res://scenes/props/lab_stool.tscn" id="43_lea5d"]
+[ext_resource type="PackedScene" uid="uid://bhsywjucyvwr4" path="res://scenes/props/lamp.tscn" id="44_802qo"]
+[ext_resource type="PackedScene" uid="uid://cbwnglxp6e5xl" path="res://scenes/props/laptop.tscn" id="45_nhteb"]
+[ext_resource type="PackedScene" uid="uid://d0xg5752ilfod" path="res://scenes/props/long_light.tscn" id="46_rqdni"]
+[ext_resource type="PackedScene" uid="uid://g2niuiq2vc3v" path="res://scenes/props/mortar_pestle.tscn" id="47_o2sql"]
+[ext_resource type="PackedScene" uid="uid://dydql2t5iysxl" path="res://scenes/props/packed_shelf.tscn" id="48_whnb1"]
+[ext_resource type="PackedScene" uid="uid://cwik6k8b6j8i" path="res://scenes/props/petri_stack.tscn" id="49_n0o68"]
+[ext_resource type="PackedScene" uid="uid://bsyx1mqhpd05u" path="res://scenes/props/pipe.tscn" id="50_h75uk"]
+[ext_resource type="PackedScene" uid="uid://cs3ue048bikdp" path="res://scenes/props/plant.tscn" id="51_7m4fk"]
+[ext_resource type="PackedScene" uid="uid://cre4128w40hta" path="res://scenes/props/plug.tscn" id="52_wb80m"]
+[ext_resource type="PackedScene" uid="uid://bqsl7sacawb25" path="res://scenes/props/pot.tscn" id="53_1mgs3"]
+[ext_resource type="PackedScene" uid="uid://b8e4eh6gcye4d" path="res://scenes/props/reader.tscn" id="54_b7fkj"]
+[ext_resource type="PackedScene" uid="uid://bm13mrx8qf5pt" path="res://scenes/props/secure_container.tscn" id="55_p7bef"]
+[ext_resource type="PackedScene" uid="uid://bhwjk2ejfkrxd" path="res://scenes/props/shelf.tscn" id="56_qk354"]
+[ext_resource type="PackedScene" uid="uid://bj61l2igrb552" path="res://scenes/props/shelf_unit.tscn" id="57_umeve"]
+[ext_resource type="PackedScene" uid="uid://dm2yjc802asr8" path="res://scenes/props/single_shelf.tscn" id="58_8nn7y"]
+[ext_resource type="PackedScene" uid="uid://83pvjdsclu1t" path="res://scenes/props/single_tile.tscn" id="59_6nhwa"]
+[ext_resource type="PackedScene" uid="uid://da05cesh4nk72" path="res://scenes/props/something.tscn" id="60_qmktk"]
+[ext_resource type="PackedScene" uid="uid://cf4hssxfoyi1p" path="res://scenes/props/specimen_canister.tscn" id="61_wtu4n"]
+[ext_resource type="PackedScene" uid="uid://bn52qh2rixoxa" path="res://scenes/props/specimen_jar.tscn" id="62_k3jmf"]
+[ext_resource type="PackedScene" uid="uid://bc46ro0v3djgy" path="res://scenes/props/square_container.tscn" id="63_r5uiw"]
+[ext_resource type="PackedScene" uid="uid://dj0hqmjrkr8iq" path="res://scenes/props/step.tscn" id="64_2ijww"]
+[ext_resource type="PackedScene" uid="uid://ce7x1en5v85jd" path="res://scenes/props/sticky_notes.tscn" id="65_nwfyf"]
+[ext_resource type="PackedScene" uid="uid://bc7ocptv40cx0" path="res://scenes/props/stool.tscn" id="66_02v53"]
+[ext_resource type="PackedScene" uid="uid://c8hg65kr04rwq" path="res://scenes/props/storage_cabinet.tscn" id="67_38gtn"]
+[ext_resource type="PackedScene" uid="uid://e6gudcipd4n2" path="res://scenes/props/syringe.tscn" id="68_p1xj5"]
+[ext_resource type="PackedScene" uid="uid://db4rw010kyqj3" path="res://scenes/props/test_tube_rack.tscn" id="69_vdsao"]
+[ext_resource type="PackedScene" uid="uid://dccqmivldgh5b" path="res://scenes/props/tiles.tscn" id="70_sko43"]
+[ext_resource type="PackedScene" uid="uid://ythp01wn06cj" path="res://scenes/props/titener.tscn" id="71_xhfce"]
+[ext_resource type="PackedScene" uid="uid://ib5wcd8dtoer" path="res://scenes/props/tools_set.tscn" id="72_qp5ah"]
+[ext_resource type="PackedScene" uid="uid://ck1ex7r2t1khw" path="res://scenes/props/vent.tscn" id="73_rxcqi"]
+[ext_resource type="PackedScene" uid="uid://dnsbwp1g8cwq4" path="res://scenes/props/vitals_console.tscn" id="74_ikf8g"]
+[ext_resource type="PackedScene" uid="uid://di5dcp2sfctqj" path="res://scenes/props/wall_slelf.tscn" id="75_xkais"]
+[ext_resource type="PackedScene" uid="uid://cqno02ry4eyxg" path="res://scenes/props/weight_set.tscn" id="76_ddh7f"]
+[ext_resource type="PackedScene" uid="uid://beiyt3fl4a3oh" path="res://scenes/props/weird_wall.tscn" id="77_1gifs"]
+[ext_resource type="PackedScene" uid="uid://d16mgv6mgov0i" path="res://scenes/props/what_is_this.tscn" id="78_3idg4"]
+[ext_resource type="PackedScene" uid="uid://dtn7w4x25ntop" path="res://scenes/Slime.tscn" id="79_me0th"]
+[ext_resource type="ArrayMesh" uid="uid://x4jwj0s3jkby" path="res://slime.res" id="80_nxn7y"]
+[ext_resource type="Script" uid="uid://c6mnb0q2ewus0" path="res://scripts/slime.gd" id="81_i8yk6"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7byt5"]
-size = Vector3(275.06522, 1, 24)
+[sub_resource type="BoxShape3D" id="BoxShape3D_xyofx"]
+size = Vector3(873.82733, 1, 24)
 
-[sub_resource type="BoxMesh" id="BoxMesh_odtxy"]
-size = Vector3(275.06522, 1, 24)
+[sub_resource type="BoxMesh" id="BoxMesh_hpcpb"]
+size = Vector3(873.82733, 1, 24)
 
-[node name="PropsGallery" type="Node3D" unique_id=636560205]
+[node name="PropsGallery" type="Node3D" unique_id=1961301080]
 
-[node name="Floor" type="StaticBody3D" parent="." unique_id=226751369]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.53261, -0.5, 0)
+[node name="Floor" type="StaticBody3D" parent="." unique_id=1208153834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 428.91367, -0.5, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=500975394]
-shape = SubResource("BoxShape3D_7byt5")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=1823634959]
+shape = SubResource("BoxShape3D_xyofx")
 
-[node name="FloorMesh" type="MeshInstance3D" parent="Floor" unique_id=359835779]
-mesh = SubResource("BoxMesh_odtxy")
+[node name="FloorMesh" type="MeshInstance3D" parent="Floor" unique_id=1513959402]
+mesh = SubResource("BoxMesh_hpcpb")
 
-[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1156248279]
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1185124971]
 transform = Transform3D(0.81915206, -0.46984634, 0.32898995, 0, 0.57357645, 0.81915206, -0.57357645, -0.6710101, 0.46984634, 0, 0, 0)
 shadow_enabled = true
 
-[node name="2_books" type="RigidBody3D" parent="." unique_id=804398597 instance=ExtResource("1_52b0c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.249345, 0.05, 0)
+[node name="2_books" type="RigidBody3D" parent="." unique_id=394371804 instance=ExtResource("1_s31uy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3215265, 0.05, 0)
 mass = 8.0
 
-[node name="Label_2_books" type="Label3D" parent="." unique_id=1418245507]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.249345, 1.3656938, 0)
+[node name="Label_2_books" type="Label3D" parent="." unique_id=1821631421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3215265, 4.658177, 0)
 pixel_size = 0.01
 billboard = 1
 text = "2_books"
 font_size = 48
 
-[node name="3_books" type="RigidBody3D" parent="." unique_id=2115159886 instance=ExtResource("2_oi4am")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.308861, 0.05, 0)
+[node name="3_books" type="RigidBody3D" parent="." unique_id=706882994 instance=ExtResource("2_52b0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.786962, 0.05, 0)
 mass = 8.0
 
-[node name="Label_3_books" type="Label3D" parent="." unique_id=1762841621]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.308861, 1.45398, 0)
+[node name="Label_3_books" type="Label3D" parent="." unique_id=678199674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.786962, 5.1260934, 0)
 pixel_size = 0.01
 billboard = 1
 text = "3_books"
 font_size = 48
 
-[node name="4floor" type="StaticBody3D" parent="." unique_id=2056602646 instance=ExtResource("3_renov")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.859031, 0.05, 0)
+[node name="4floor" type="StaticBody3D" parent="." unique_id=1652010102 instance=ExtResource("3_oi4am")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.05286, 0.05, 0)
 
-[node name="Label_4floor" type="Label3D" parent="." unique_id=265145851]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.859031, 1.2953099, 0)
+[node name="Label_4floor" type="Label3D" parent="." unique_id=1816857495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.05286, 4.2851424, 0)
 pixel_size = 0.01
 billboard = 1
 text = "4floor"
 font_size = 48
 
-[node name="alembic" type="StaticBody3D" parent="." unique_id=1152813389 instance=ExtResource("4_t03u8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.653736, 0.05, 0)
+[node name="alembic" type="StaticBody3D" parent="." unique_id=2013310479 instance=ExtResource("4_renov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.6148, 0.05, 0)
 
-[node name="Label_alembic" type="Label3D" parent="." unique_id=94623959]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.653736, 1.9375455, 0)
+[node name="Label_alembic" type="Label3D" parent="." unique_id=821069376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.6148, 7.6889906, 0)
 pixel_size = 0.01
 billboard = 1
 text = "alembic"
 font_size = 48
 
-[node name="analysis_console" type="StaticBody3D" parent="." unique_id=917046565 instance=ExtResource("5_xwrl0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.608444, 0.05, 0)
+[node name="analysis_console" type="StaticBody3D" parent="." unique_id=743499859 instance=ExtResource("5_t03u8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.824745, 0.05, 0)
 
-[node name="Label_analysis_console" type="Label3D" parent="." unique_id=850658999]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.608444, 6.2999997, 0)
+[node name="Label_analysis_console" type="Label3D" parent="." unique_id=947594096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.824745, 30.81, 0)
 pixel_size = 0.01
 billboard = 1
 text = "analysis_console"
 font_size = 48
 
-[node name="another_corton" type="RigidBody3D" parent="." unique_id=187396724 instance=ExtResource("6_5xqxs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.502201, 0.05, 0)
+[node name="another_corton" type="RigidBody3D" parent="." unique_id=683523717 instance=ExtResource("6_xwrl0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.71166, 0.05, 0)
 mass = 8.0
 
-[node name="Label_another_corton" type="Label3D" parent="." unique_id=1471445700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.502201, 1.0785209, 0)
+[node name="Label_another_corton" type="Label3D" parent="." unique_id=1992091325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.71166, 3.1361609, 0)
 pixel_size = 0.01
 billboard = 1
 text = "another_corton"
 font_size = 48
 
-[node name="autoclave" type="StaticBody3D" parent="." unique_id=797818803 instance=ExtResource("7_2uu05")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.24596, 0.05, 0)
+[node name="autoclave" type="StaticBody3D" parent="." unique_id=60505544 instance=ExtResource("7_5xqxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.80358, 0.05, 0)
 
-[node name="Label_autoclave" type="Label3D" parent="." unique_id=160236332]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.24596, 2.1599998, 0)
+[node name="Label_autoclave" type="Label3D" parent="." unique_id=356926570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.80358, 8.868, 0)
 pixel_size = 0.01
 billboard = 1
 text = "autoclave"
 font_size = 48
 
-[node name="balance_scale" type="StaticBody3D" parent="." unique_id=1086425688 instance=ExtResource("8_ujf7k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.244406, 0.05, 0)
+[node name="balance_scale" type="StaticBody3D" parent="." unique_id=381393775 instance=ExtResource("8_2uu05")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.24535, 0.05, 0)
 
-[node name="Label_balance_scale" type="Label3D" parent="." unique_id=1959469776]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.244406, 2.0625, 0)
+[node name="Label_balance_scale" type="Label3D" parent="." unique_id=603434026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.24535, 8.35125, 0)
 pixel_size = 0.01
 billboard = 1
 text = "balance_scale"
 font_size = 48
 
-[node name="big_coaton" type="StaticBody3D" parent="." unique_id=450807907 instance=ExtResource("9_qv35x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.140503, 0.05, 0)
+[node name="big_coaton" type="StaticBody3D" parent="." unique_id=14681198 instance=ExtResource("9_ujf7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 112.14465, 0.05, 0)
 
-[node name="Label_big_coaton" type="Label3D" parent="." unique_id=1796675476]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.140503, 1.7082058, 0)
+[node name="Label_big_coaton" type="Label3D" parent="." unique_id=375859198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 112.14465, 6.4734907, 0)
 pixel_size = 0.01
 billboard = 1
 text = "big_coaton"
 font_size = 48
 
-[node name="biohazard_bin" type="StaticBody3D" parent="." unique_id=149172896 instance=ExtResource("10_3ws52")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.801147, 0.05, 0)
+[node name="biohazard_bin" type="StaticBody3D" parent="." unique_id=2136684731 instance=ExtResource("10_qv35x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.79608, 0.05, 0)
 
-[node name="Label_biohazard_bin" type="Label3D" parent="." unique_id=1095972083]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.801147, 2.6999998, 0)
+[node name="Label_biohazard_bin" type="Label3D" parent="." unique_id=1255567179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.79608, 11.73, 0)
 pixel_size = 0.01
 billboard = 1
 text = "biohazard_bin"
 font_size = 48
 
-[node name="book_set" type="RigidBody3D" parent="." unique_id=156820120 instance=ExtResource("11_r6gxi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.15861, 0.05, 0)
+[node name="book_set" type="RigidBody3D" parent="." unique_id=1870026032 instance=ExtResource("11_3ws52")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.14064, 0.05, 0)
 mass = 8.0
 
-[node name="Label_book_set" type="Label3D" parent="." unique_id=1099488837]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.15861, 1.479273, 0)
+[node name="Label_book_set" type="Label3D" parent="." unique_id=320080102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.14064, 5.2601466, 0)
 pixel_size = 0.01
 billboard = 1
 text = "book_set"
 font_size = 48
 
-[node name="bunsen_burner" type="StaticBody3D" parent="." unique_id=215211263 instance=ExtResource("12_ftlk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.30541, 0.05, 0)
+[node name="bunsen_burner" type="StaticBody3D" parent="." unique_id=1397935252 instance=ExtResource("12_r6gxi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 141.36867, 0.05, 0)
 
-[node name="Label_bunsen_burner" type="Label3D" parent="." unique_id=1887417147]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.30541, 1.23, 0)
+[node name="Label_bunsen_burner" type="Label3D" parent="." unique_id=1358097810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 141.36867, 3.9389997, 0)
 pixel_size = 0.01
 billboard = 1
 text = "bunsen_burner"
 font_size = 48
 
-[node name="camera" type="StaticBody3D" parent="." unique_id=1141719036 instance=ExtResource("13_e3y2f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.49293, 0.05, 0)
+[node name="camera" type="StaticBody3D" parent="." unique_id=2117624282 instance=ExtResource("13_ftlk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 146.51253, 0.05, 0)
 
-[node name="Label_camera" type="Label3D" parent="." unique_id=977277722]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.49293, 1.110165, 0)
+[node name="Label_camera" type="Label3D" parent="." unique_id=1367728763]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 146.51253, 3.3038743, 0)
 pixel_size = 0.01
 billboard = 1
 text = "camera"
 font_size = 48
 
-[node name="carpet" type="StaticBody3D" parent="." unique_id=922978111 instance=ExtResource("14_kpskb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.973927, 0.05, 0)
+[node name="carpet" type="StaticBody3D" parent="." unique_id=563684238 instance=ExtResource("14_e3y2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 169.1118, 0.05, 0)
 
-[node name="Label_carpet" type="Label3D" parent="." unique_id=2133723401]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.973927, 1.6979251, 0)
+[node name="Label_carpet" type="Label3D" parent="." unique_id=761625077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 169.1118, 6.4190025, 0)
 pixel_size = 0.01
 billboard = 1
 text = "carpet"
 font_size = 48
 
-[node name="carton" type="RigidBody3D" parent="." unique_id=146894269 instance=ExtResource("15_cskva")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.37844, 0.05, 0)
+[node name="carton" type="RigidBody3D" parent="." unique_id=1155171658 instance=ExtResource("15_kpskb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 191.30574, 0.05, 0)
 mass = 8.0
 
-[node name="Label_carton" type="Label3D" parent="." unique_id=861816150]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.37844, 1.220472, 0)
+[node name="Label_carton" type="Label3D" parent="." unique_id=908129412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 191.30574, 3.8885014, 0)
 pixel_size = 0.01
 billboard = 1
 text = "carton"
 font_size = 48
 
-[node name="ceiling_lamp" type="StaticBody3D" parent="." unique_id=1828157394 instance=ExtResource("16_bu03i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.663395, 0.05, 0)
+[node name="ceiling_lamp" type="StaticBody3D" parent="." unique_id=1139582197 instance=ExtResource("16_cskva")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 196.96599, 0.05, 0)
 
-[node name="Label_ceiling_lamp" type="Label3D" parent="." unique_id=176970700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.663395, 2.1599998, 0)
+[node name="Label_ceiling_lamp" type="Label3D" parent="." unique_id=1021262194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 196.96599, 8.868, 0)
 pixel_size = 0.01
 billboard = 1
 text = "ceiling_lamp"
 font_size = 48
 
-[node name="centrifuge" type="StaticBody3D" parent="." unique_id=749919137 instance=ExtResource("17_txb5g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.59152, 0.05, 0)
+[node name="centrifuge" type="StaticBody3D" parent="." unique_id=245916593 instance=ExtResource("17_bu03i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 206.03503, 0.05, 0)
 
-[node name="Label_centrifuge" type="Label3D" parent="." unique_id=374542046]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.59152, 1.9499999, 0)
+[node name="Label_centrifuge" type="Label3D" parent="." unique_id=1981154478]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 206.03503, 7.7549996, 0)
 pixel_size = 0.01
 billboard = 1
 text = "centrifuge"
 font_size = 48
 
-[node name="chair" type="StaticBody3D" parent="." unique_id=126434397 instance=ExtResource("18_44y7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.94442, 0.05, 0)
+[node name="chair" type="StaticBody3D" parent="." unique_id=848821949 instance=ExtResource("18_txb5g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 217.35541, 0.05, 0)
 
-[node name="Label_chair" type="Label3D" parent="." unique_id=1408401739]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.94442, 3.460353, 0)
+[node name="Label_chair" type="Label3D" parent="." unique_id=1437939046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 217.35541, 15.759871, 0)
 pixel_size = 0.01
 billboard = 1
 text = "chair"
 font_size = 48
 
-[node name="chemical_vat" type="StaticBody3D" parent="." unique_id=770503689 instance=ExtResource("19_kxpta")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.29203, 0.05, 0)
+[node name="chemical_vat" type="StaticBody3D" parent="." unique_id=432029807 instance=ExtResource("19_44y7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 228.64775, 0.05, 0)
 
-[node name="Label_chemical_vat" type="Label3D" parent="." unique_id=1429216202]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.29203, 4.14, 0)
+[node name="Label_chemical_vat" type="Label3D" parent="." unique_id=1820459841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 228.64775, 19.362, 0)
 pixel_size = 0.01
 billboard = 1
 text = "chemical_vat"
 font_size = 48
 
-[node name="computer" type="StaticBody3D" parent="." unique_id=1421975259 instance=ExtResource("20_t0y2m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.08011, 0.05, 0)
+[node name="computer" type="StaticBody3D" parent="." unique_id=915504467 instance=ExtResource("20_kxpta")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 236.97456, 0.05, 0)
 
-[node name="Label_computer" type="Label3D" parent="." unique_id=2122127259]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.08011, 2.0052629, 0)
+[node name="Label_computer" type="Label3D" parent="." unique_id=887073713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 236.97456, 8.047894, 0)
 pixel_size = 0.01
 billboard = 1
 text = "computer"
 font_size = 48
 
-[node name="container" type="StaticBody3D" parent="." unique_id=1357360226 instance=ExtResource("21_shk28")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.124374, 0.05, 0)
+[node name="container" type="StaticBody3D" parent="." unique_id=2069502506 instance=ExtResource("21_t0y2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 241.35919, 0.05, 0)
 
-[node name="Label_container" type="Label3D" parent="." unique_id=1745114362]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.124374, 1.35, 0)
+[node name="Label_container" type="Label3D" parent="." unique_id=312900707]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 241.35919, 4.575, 0)
 pixel_size = 0.01
 billboard = 1
 text = "container"
 font_size = 48
 
-[node name="covers" type="StaticBody3D" parent="." unique_id=1222885437 instance=ExtResource("22_yhyl1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.3003, 0.05, 0)
+[node name="covers" type="StaticBody3D" parent="." unique_id=462315053 instance=ExtResource("22_shk28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 246.44157, 0.05, 0)
 
-[node name="Label_covers" type="Label3D" parent="." unique_id=1420440103]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.3003, 0.76296, 0)
+[node name="Label_covers" type="Label3D" parent="." unique_id=1769594855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 246.44157, 1.4636881, 0)
 pixel_size = 0.01
 billboard = 1
 text = "covers"
 font_size = 48
 
-[node name="coverset" type="StaticBody3D" parent="." unique_id=798798746 instance=ExtResource("23_ujegq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.7373, 0.05, 0)
+[node name="coverset" type="StaticBody3D" parent="." unique_id=1826728950 instance=ExtResource("23_yhyl1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 252.90768, 0.05, 0)
 
-[node name="Label_coverset" type="Label3D" parent="." unique_id=359063795]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.7373, 1.241097, 0)
+[node name="Label_coverset" type="Label3D" parent="." unique_id=683258274]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 252.90768, 3.9978137, 0)
 pixel_size = 0.01
 billboard = 1
 text = "coverset"
 font_size = 48
 
-[node name="cryo_pod" type="StaticBody3D" parent="." unique_id=1652717260 instance=ExtResource("24_lv01e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.71494, 0.05, 0)
+[node name="cryo_pod" type="StaticBody3D" parent="." unique_id=630680228 instance=ExtResource("24_ujegq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 262.23917, 0.05, 0)
 
-[node name="Label_cryo_pod" type="Label3D" parent="." unique_id=1877348070]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.71494, 7.0499997, 0)
+[node name="Label_cryo_pod" type="Label3D" parent="." unique_id=19350451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 262.23917, 34.784996, 0)
 pixel_size = 0.01
 billboard = 1
 text = "cryo_pod"
 font_size = 48
 
-[node name="cryo_rack" type="StaticBody3D" parent="." unique_id=611844359 instance=ExtResource("25_8h0de")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.85873, 0.05, 0)
+[node name="cryo_rack" type="StaticBody3D" parent="." unique_id=336160251 instance=ExtResource("25_lv01e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272.45126, 0.05, 0)
 
-[node name="Label_cryo_rack" type="Label3D" parent="." unique_id=1667630221]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.85873, 1.05, 0)
+[node name="Label_cryo_rack" type="Label3D" parent="." unique_id=751687907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272.45126, 2.9849997, 0)
 pixel_size = 0.01
 billboard = 1
 text = "cryo_rack"
 font_size = 48
 
-[node name="cup" type="StaticBody3D" parent="." unique_id=1243201988 instance=ExtResource("26_3800o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.22138, 0.05, 0)
+[node name="cup" type="StaticBody3D" parent="." unique_id=471792578 instance=ExtResource("26_8h0de")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 278.52332, 0.05, 0)
 
-[node name="Label_cup" type="Label3D" parent="." unique_id=183957225]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.22138, 1.193544, 0)
+[node name="Label_cup" type="Label3D" parent="." unique_id=722944921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 278.52332, 3.7457829, 0)
 pixel_size = 0.01
 billboard = 1
 text = "cup"
 font_size = 48
 
-[node name="cylinder" type="StaticBody3D" parent="." unique_id=825970875 instance=ExtResource("27_5gqru")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.35335, 0.05, 0)
+[node name="cylinder" type="StaticBody3D" parent="." unique_id=1719174178 instance=ExtResource("27_3800o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 283.37274, 0.05, 0)
 
-[node name="Label_cylinder" type="Label3D" parent="." unique_id=614457829]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.35335, 1.6695901, 0)
+[node name="Label_cylinder" type="Label3D" parent="." unique_id=203182590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 283.37274, 6.268827, 0)
 pixel_size = 0.01
 billboard = 1
 text = "cylinder"
 font_size = 48
 
-[node name="dropper_bottles" type="RigidBody3D" parent="." unique_id=2113546421 instance=ExtResource("28_ehuuj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.54066, 0.05, 0)
-mass = 2.9158602
+[node name="dropper_bottles" type="RigidBody3D" parent="." unique_id=936916342 instance=ExtResource("28_5gqru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 288.51547, 0.05, 0)
+mass = 8.0
 
-[node name="Label_dropper_bottles" type="Label3D" parent="." unique_id=1080910758]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.54066, 1.0377848, 0)
+[node name="Label_dropper_bottles" type="Label3D" parent="." unique_id=1527875837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 288.51547, 2.9202592, 0)
 pixel_size = 0.01
 billboard = 1
 text = "dropper_bottles"
 font_size = 48
 
-[node name="drum" type="StaticBody3D" parent="." unique_id=836462832 instance=ExtResource("29_y8xib")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.21978, 0.05, 0)
+[node name="drum" type="StaticBody3D" parent="." unique_id=1821445445 instance=ExtResource("29_ehuuj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 296.2648, 0.05, 0)
 
-[node name="Label_drum" type="Label3D" parent="." unique_id=849087361]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.21978, 3.15, 0)
+[node name="Label_drum" type="Label3D" parent="." unique_id=327294346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 296.2648, 14.115001, 0)
 pixel_size = 0.01
 billboard = 1
 text = "drum"
 font_size = 48
 
-[node name="dunbell" type="StaticBody3D" parent="." unique_id=1432347396 instance=ExtResource("30_tf4ka")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 95.74182, 0.05, 0)
+[node name="dunbell" type="StaticBody3D" parent="." unique_id=1465496428 instance=ExtResource("30_y8xib")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 303.18167, 0.05, 0)
 
-[node name="Label_dunbell" type="Label3D" parent="." unique_id=1832734648]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 95.74182, 1.4100001, 0)
+[node name="Label_dunbell" type="Label3D" parent="." unique_id=264799977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 303.18167, 4.893, 0)
 pixel_size = 0.01
 billboard = 1
 text = "dunbell"
 font_size = 48
 
-[node name="file" type="StaticBody3D" parent="." unique_id=262270272 instance=ExtResource("31_ut6t2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98.269325, 0.05, 0)
+[node name="file" type="StaticBody3D" parent="." unique_id=111135780 instance=ExtResource("31_tf4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 310.12744, 0.05, 0)
 
-[node name="Label_file" type="Label3D" parent="." unique_id=1632373360]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98.269325, 0.743697, 0)
+[node name="Label_file" type="Label3D" parent="." unique_id=1799379236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 310.12744, 1.3615941, 0)
 pixel_size = 0.01
 billboard = 1
 text = "file"
 font_size = 48
 
-[node name="fire_extinguisher" type="StaticBody3D" parent="." unique_id=104351389 instance=ExtResource("32_jc513")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.92869, 0.05, 0)
+[node name="fire_extinguisher" type="StaticBody3D" parent="." unique_id=549907253 instance=ExtResource("32_ut6t2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 317.77206, 0.05, 0)
 
-[node name="Label_fire_extinguisher" type="Label3D" parent="." unique_id=21242425]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.92869, 2.43, 0)
+[node name="Label_fire_extinguisher" type="Label3D" parent="." unique_id=1728804530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 317.77206, 10.299001, 0)
 pixel_size = 0.01
 billboard = 1
 text = "fire_extinguisher"
 font_size = 48
 
-[node name="first_aid_kit" type="StaticBody3D" parent="." unique_id=1052941663 instance=ExtResource("33_po0h4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.20147, 0.05, 0)
+[node name="first_aid_kit" type="StaticBody3D" parent="." unique_id=32745849 instance=ExtResource("33_jc513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 323.36777, 0.05, 0)
 
-[node name="Label_first_aid_kit" type="Label3D" parent="." unique_id=1896153979]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.20147, 1.44, 0)
+[node name="Label_first_aid_kit" type="Label3D" parent="." unique_id=282235615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 323.36777, 5.052, 0)
 pixel_size = 0.01
 billboard = 1
 text = "first_aid_kit"
 font_size = 48
 
-[node name="flask_beaker" type="RigidBody3D" parent="." unique_id=244449164 instance=ExtResource("34_puwu5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.077156, 0.05, 0)
+[node name="flask_beaker" type="RigidBody3D" parent="." unique_id=1611818571 instance=ExtResource("34_po0h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 332.15894, 0.05, 0)
 mass = 8.0
 
-[node name="Label_flask_beaker" type="Label3D" parent="." unique_id=963190443]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.077156, 1.5, 0)
+[node name="Label_flask_beaker" type="Label3D" parent="." unique_id=112353822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 332.15894, 5.37, 0)
 pixel_size = 0.01
 billboard = 1
 text = "flask_beaker"
 font_size = 48
 
-[node name="funnel_stand" type="StaticBody3D" parent="." unique_id=103586009 instance=ExtResource("35_6r5c2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.7868, 0.05, 0)
+[node name="funnel_stand" type="StaticBody3D" parent="." unique_id=1120912840 instance=ExtResource("35_puwu5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 340.07004, 0.05, 0)
 
-[node name="Label_funnel_stand" type="Label3D" parent="." unique_id=1071603879]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.7868, 2.1, 0)
+[node name="Label_funnel_stand" type="Label3D" parent="." unique_id=345851132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 340.07004, 8.55, 0)
 pixel_size = 0.01
 billboard = 1
 text = "funnel_stand"
 font_size = 48
 
-[node name="gas_cylinder" type="StaticBody3D" parent="." unique_id=1364640203 instance=ExtResource("36_1gpin")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.15878, 0.05, 0)
+[node name="gas_cylinder" type="StaticBody3D" parent="." unique_id=1565958925 instance=ExtResource("36_6r5c2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 346.19153, 0.05, 0)
 
-[node name="Label_gas_cylinder" type="Label3D" parent="." unique_id=1374400925]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.15878, 4.62, 0)
+[node name="Label_gas_cylinder" type="Label3D" parent="." unique_id=1066827464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 346.19153, 21.906, 0)
 pixel_size = 0.01
 billboard = 1
 text = "gas_cylinder"
 font_size = 48
 
-[node name="half_dumbell" type="StaticBody3D" parent="." unique_id=1024474377 instance=ExtResource("37_cpmgu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 113.621475, 0.05, 0)
+[node name="half_dumbell" type="StaticBody3D" parent="." unique_id=580002451 instance=ExtResource("37_1gpin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 352.79382, 0.05, 0)
 
-[node name="Label_half_dumbell" type="Label3D" parent="." unique_id=387496901]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 113.621475, 1.163901, 0)
+[node name="Label_half_dumbell" type="Label3D" parent="." unique_id=672351482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 352.79382, 3.5886753, 0)
 pixel_size = 0.01
 billboard = 1
 text = "half_dumbell"
 font_size = 48
 
-[node name="hazard_sign" type="StaticBody3D" parent="." unique_id=1404022496 instance=ExtResource("38_ygmrv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.12614, 0.05, 0)
+[node name="hazard_sign" type="StaticBody3D" parent="." unique_id=1139798692 instance=ExtResource("38_cpmgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 359.61853, 0.05, 0)
 
-[node name="Label_hazard_sign" type="Label3D" parent="." unique_id=1901333494]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.12614, 2.34, 0)
+[node name="Label_hazard_sign" type="Label3D" parent="." unique_id=413842266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 359.61853, 9.822, 0)
 pixel_size = 0.01
 billboard = 1
 text = "hazard_sign"
 font_size = 48
 
-[node name="head_phones" type="StaticBody3D" parent="." unique_id=88386368 instance=ExtResource("39_yng0r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.63208, 0.05, 0)
+[node name="head_phones" type="StaticBody3D" parent="." unique_id=1248735398 instance=ExtResource("39_ygmrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 366.45, 0.05, 0)
 
-[node name="Label_head_phones" type="Label3D" parent="." unique_id=1951378592]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.63208, 0.9705, 0)
+[node name="Label_head_phones" type="Label3D" parent="." unique_id=361129027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 366.45, 2.56365, 0)
 pixel_size = 0.01
 billboard = 1
 text = "head_phones"
 font_size = 48
 
-[node name="hot_plate" type="StaticBody3D" parent="." unique_id=2124394510 instance=ExtResource("40_so46v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.078026, 0.05, 0)
+[node name="hot_plate" type="StaticBody3D" parent="." unique_id=1203904038 instance=ExtResource("40_yng0r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 372.9635, 0.05, 0)
 
-[node name="Label_hot_plate" type="Label3D" parent="." unique_id=210991597]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.078026, 0.915, 0)
+[node name="Label_hot_plate" type="Label3D" parent="." unique_id=1655552728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 372.9635, 2.2694998, 0)
 pixel_size = 0.01
 billboard = 1
 text = "hot_plate"
 font_size = 48
 
-[node name="jetpack" type="StaticBody3D" parent="." unique_id=141339984 instance=ExtResource("41_ws1pw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 123.41352, 0.05, 0)
+[node name="jetpack" type="StaticBody3D" parent="." unique_id=728739520 instance=ExtResource("41_so46v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 378.89166, 0.05, 0)
 
-[node name="Label_jetpack" type="Label3D" parent="." unique_id=582487997]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 123.41352, 3.81, 0)
+[node name="Label_jetpack" type="Label3D" parent="." unique_id=586872735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 378.89166, 17.613, 0)
 pixel_size = 0.01
 billboard = 1
 text = "jetpack"
 font_size = 48
 
-[node name="lab_bench" type="StaticBody3D" parent="." unique_id=1210279161 instance=ExtResource("42_lea5d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.039024, 0.05, 0)
+[node name="lab_bench" type="StaticBody3D" parent="." unique_id=46051050 instance=ExtResource("42_ws1pw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 391.6568, 0.05, 0)
 
-[node name="Label_lab_bench" type="Label3D" parent="." unique_id=997387367]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.039024, 3.2999997, 0)
+[node name="Label_lab_bench" type="Label3D" parent="." unique_id=1485636043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 391.6568, 14.91, 0)
 pixel_size = 0.01
 billboard = 1
 text = "lab_bench"
 font_size = 48
 
-[node name="lab_stool" type="StaticBody3D" parent="." unique_id=386866084 instance=ExtResource("43_802qo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130.86702, 0.05, 0)
+[node name="lab_stool" type="StaticBody3D" parent="." unique_id=2070629930 instance=ExtResource("43_lea5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 405.4952, 0.05, 0)
 
-[node name="Label_lab_stool" type="Label3D" parent="." unique_id=441355220]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130.86702, 2.55, 0)
+[node name="Label_lab_stool" type="Label3D" parent="." unique_id=941896770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 405.4952, 10.934999, 0)
 pixel_size = 0.01
 billboard = 1
 text = "lab_stool"
 font_size = 48
 
-[node name="lamp" type="StaticBody3D" parent="." unique_id=1856586086 instance=ExtResource("44_nhteb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 133.30524, 0.05, 0)
+[node name="lamp" type="StaticBody3D" parent="." unique_id=675766224 instance=ExtResource("44_802qo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 411.96774, 0.05, 0)
 
-[node name="Label_lamp" type="Label3D" parent="." unique_id=1276681774]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 133.30524, 1.295694, 0)
+[node name="Label_lamp" type="Label3D" parent="." unique_id=1261284929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 411.96774, 4.287178, 0)
 pixel_size = 0.01
 billboard = 1
 text = "lamp"
 font_size = 48
 
-[node name="laptop" type="StaticBody3D" parent="." unique_id=1460533143 instance=ExtResource("45_rqdni")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.93207, 0.05, 0)
+[node name="laptop" type="StaticBody3D" parent="." unique_id=1757050977 instance=ExtResource("45_nhteb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 419.44, 0.05, 0)
 
-[node name="Label_laptop" type="Label3D" parent="." unique_id=76865249]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.93207, 1.3340521, 0)
+[node name="Label_laptop" type="Label3D" parent="." unique_id=808405123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 419.44, 4.4904757, 0)
 pixel_size = 0.01
 billboard = 1
 text = "laptop"
 font_size = 48
 
-[node name="long_light" type="StaticBody3D" parent="." unique_id=2069520658 instance=ExtResource("46_o2sql")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140.3684, 0.05, 0)
+[node name="long_light" type="StaticBody3D" parent="." unique_id=1469752370 instance=ExtResource("46_rqdni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 436.50244, 0.05, 0)
 
-[node name="Label_long_light" type="Label3D" parent="." unique_id=1027265930]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140.3684, 0.9758821, 0)
+[node name="Label_long_light" type="Label3D" parent="." unique_id=1999859372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 436.50244, 2.592175, 0)
 pixel_size = 0.01
 billboard = 1
 text = "long_light"
 font_size = 48
 
-[node name="mortar_pestle" type="StaticBody3D" parent="." unique_id=714132442 instance=ExtResource("47_whnb1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144.4195, 0.05, 0)
+[node name="mortar_pestle" type="StaticBody3D" parent="." unique_id=612307052 instance=ExtResource("47_o2sql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 451.52332, 0.05, 0)
 
-[node name="Label_mortar_pestle" type="Label3D" parent="." unique_id=730197742]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144.4195, 1.2554587, 0)
+[node name="Label_mortar_pestle" type="Label3D" parent="." unique_id=134692782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 451.52332, 4.073931, 0)
 pixel_size = 0.01
 billboard = 1
 text = "mortar_pestle"
 font_size = 48
 
-[node name="packed_shelf" type="StaticBody3D" parent="." unique_id=1191767989 instance=ExtResource("48_n0o68")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150.75687, 0.05, 0)
+[node name="packed_shelf" type="StaticBody3D" parent="." unique_id=659561639 instance=ExtResource("48_whnb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 478.6614, 0.05, 0)
 
-[node name="Label_packed_shelf" type="Label3D" parent="." unique_id=468569894]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150.75687, 5.2549586, 0)
+[node name="Label_packed_shelf" type="Label3D" parent="." unique_id=437027105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 478.6614, 25.27128, 0)
 pixel_size = 0.01
 billboard = 1
 text = "packed_shelf"
 font_size = 48
 
-[node name="petri_stack" type="StaticBody3D" parent="." unique_id=1019781198 instance=ExtResource("49_h75uk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 157.20082, 0.05, 0)
+[node name="petri_stack" type="StaticBody3D" parent="." unique_id=2144906808 instance=ExtResource("49_n0o68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 506.36435, 0.05, 0)
 
-[node name="Label_petri_stack" type="Label3D" parent="." unique_id=350791445]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 157.20082, 0.84, 0)
+[node name="Label_petri_stack" type="Label3D" parent="." unique_id=1595330489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 506.36435, 1.872, 0)
 pixel_size = 0.01
 billboard = 1
 text = "petri_stack"
 font_size = 48
 
-[node name="pipe" type="StaticBody3D" parent="." unique_id=1694443997 instance=ExtResource("50_7m4fk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.79749, 0.05, 0)
+[node name="pipe" type="StaticBody3D" parent="." unique_id=2050279776 instance=ExtResource("50_h75uk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 513.67664, 0.05, 0)
 
-[node name="Label_pipe" type="Label3D" parent="." unique_id=1545280340]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.79749, 3.102474, 0)
+[node name="Label_pipe" type="Label3D" parent="." unique_id=1202839689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 513.67664, 13.863112, 0)
 pixel_size = 0.01
 billboard = 1
 text = "pipe"
 font_size = 48
 
-[node name="plant" type="StaticBody3D" parent="." unique_id=1545452536 instance=ExtResource("51_wb80m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 162.39299, 0.05, 0)
+[node name="plant" type="StaticBody3D" parent="." unique_id=1498131555 instance=ExtResource("51_7m4fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 520.9828, 0.05, 0)
 
-[node name="Label_plant" type="Label3D" parent="." unique_id=1431538145]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 162.39299, 2.02275, 0)
+[node name="Label_plant" type="Label3D" parent="." unique_id=740722898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 520.9828, 8.140575, 0)
 pixel_size = 0.01
 billboard = 1
 text = "plant"
 font_size = 48
 
-[node name="plug" type="StaticBody3D" parent="." unique_id=1870717419 instance=ExtResource("52_1mgs3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 164.89322, 0.05, 0)
+[node name="plug" type="StaticBody3D" parent="." unique_id=985964198 instance=ExtResource("52_wb80m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 527.78406, 0.05, 0)
 
-[node name="Label_plug" type="Label3D" parent="." unique_id=727081115]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 164.89322, 1.366914, 0)
+[node name="Label_plug" type="Label3D" parent="." unique_id=1736875735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 527.78406, 4.6646442, 0)
 pixel_size = 0.01
 billboard = 1
 text = "plug"
 font_size = 48
 
-[node name="pot" type="StaticBody3D" parent="." unique_id=1456792643 instance=ExtResource("53_b7fkj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 167.31839, 0.05, 0)
+[node name="pot" type="StaticBody3D" parent="." unique_id=2024150649 instance=ExtResource("53_1mgs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 534.1875, 0.05, 0)
 
-[node name="Label_pot" type="Label3D" parent="." unique_id=388864494]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 167.31839, 1.102569, 0)
+[node name="Label_pot" type="Label3D" parent="." unique_id=2101501217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 534.1875, 3.2636154, 0)
 pixel_size = 0.01
 billboard = 1
 text = "pot"
 font_size = 48
 
-[node name="reader" type="StaticBody3D" parent="." unique_id=204313800 instance=ExtResource("54_p7bef")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 169.7466, 0.05, 0)
+[node name="reader" type="StaticBody3D" parent="." unique_id=226065250 instance=ExtResource("54_b7fkj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 540.60693, 0.05, 0)
 
-[node name="Label_reader" type="Label3D" parent="." unique_id=1469008515]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 169.7466, 1.428669, 0)
+[node name="Label_reader" type="Label3D" parent="." unique_id=216941105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 540.60693, 4.9919457, 0)
 pixel_size = 0.01
 billboard = 1
 text = "reader"
 font_size = 48
 
-[node name="secure_container" type="StaticBody3D" parent="." unique_id=880751572 instance=ExtResource("55_qk354")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 172.53183, 0.05, 0)
+[node name="secure_container" type="StaticBody3D" parent="." unique_id=904710107 instance=ExtResource("55_p7bef")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 548.91864, 0.05, 0)
 
-[node name="Label_secure_container" type="Label3D" parent="." unique_id=818168678]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 172.53183, 1.8198482, 0)
+[node name="Label_secure_container" type="Label3D" parent="." unique_id=968965366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 548.91864, 7.0651946, 0)
 pixel_size = 0.01
 billboard = 1
 text = "secure_container"
 font_size = 48
 
-[node name="shelf" type="StaticBody3D" parent="." unique_id=797373542 instance=ExtResource("56_umeve")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 179.25659, 0.05, 0)
+[node name="shelf" type="StaticBody3D" parent="." unique_id=614372788 instance=ExtResource("56_qk354")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 578.10986, 0.05, 0)
 
-[node name="Label_shelf" type="Label3D" parent="." unique_id=371066437]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 179.25659, 5.2549586, 0)
+[node name="Label_shelf" type="Label3D" parent="." unique_id=778738049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 578.10986, 25.27128, 0)
 pixel_size = 0.01
 billboard = 1
 text = "shelf"
 font_size = 48
 
-[node name="shelf_unit" type="StaticBody3D" parent="." unique_id=682954824 instance=ExtResource("57_8nn7y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 186.76254, 0.05, 0)
+[node name="shelf_unit" type="StaticBody3D" parent="." unique_id=856825809 instance=ExtResource("57_umeve")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 611.4414, 0.05, 0)
 
-[node name="Label_shelf_unit" type="Label3D" parent="." unique_id=1396875350]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 186.76254, 5.4, 0)
+[node name="Label_shelf_unit" type="Label3D" parent="." unique_id=1239521500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 611.4414, 26.04, 0)
 pixel_size = 0.01
 billboard = 1
 text = "shelf_unit"
 font_size = 48
 
-[node name="single_shelf" type="StaticBody3D" parent="." unique_id=1367071488 instance=ExtResource("58_6nhwa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 191.23254, 0.05, 0)
+[node name="single_shelf" type="StaticBody3D" parent="." unique_id=1941427172 instance=ExtResource("58_8nn7y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 628.68243, 0.05, 0)
 
-[node name="Label_single_shelf" type="Label3D" parent="." unique_id=383921704]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 191.23254, 1.32, 0)
+[node name="Label_single_shelf" type="Label3D" parent="." unique_id=1648232940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 628.68243, 4.416, 0)
 pixel_size = 0.01
 billboard = 1
 text = "single_shelf"
 font_size = 48
 
-[node name="single_tile" type="StaticBody3D" parent="." unique_id=1199270661 instance=ExtResource("59_qmktk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 195.16254, 0.05, 0)
+[node name="single_tile" type="StaticBody3D" parent="." unique_id=457102336 instance=ExtResource("59_6nhwa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 643.06146, 0.05, 0)
 
-[node name="Label_single_tile" type="Label3D" parent="." unique_id=95834590]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 195.16254, 0.90081906, 0)
+[node name="Label_single_tile" type="Label3D" parent="." unique_id=1272229485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 643.06146, 2.194341, 0)
 pixel_size = 0.01
 billboard = 1
 text = "single_tile"
 font_size = 48
 
-[node name="something" type="StaticBody3D" parent="." unique_id=1609389177 instance=ExtResource("60_wtu4n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200.0948, 0.05, 0)
+[node name="something" type="StaticBody3D" parent="." unique_id=1241341176 instance=ExtResource("60_qmktk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 662.75244, 0.05, 0)
 
-[node name="Label_something" type="Label3D" parent="." unique_id=66264846]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200.0948, 1.296033, 0)
+[node name="Label_something" type="Label3D" parent="." unique_id=54790470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 662.75244, 4.2889752, 0)
 pixel_size = 0.01
 billboard = 1
 text = "something"
 font_size = 48
 
-[node name="specimen_canister" type="StaticBody3D" parent="." unique_id=1819981570 instance=ExtResource("61_k3jmf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 204.53506, 0.05, 0)
+[node name="specimen_canister" type="StaticBody3D" parent="." unique_id=616520974 instance=ExtResource("61_wtu4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 679.8358, 0.05, 0)
 
-[node name="Label_specimen_canister" type="Label3D" parent="." unique_id=1507569128]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 204.53506, 2.4, 0)
+[node name="Label_specimen_canister" type="Label3D" parent="." unique_id=1041409771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 679.8358, 10.14, 0)
 pixel_size = 0.01
 billboard = 1
 text = "specimen_canister"
 font_size = 48
 
-[node name="specimen_jar" type="RigidBody3D" parent="." unique_id=1577767855 instance=ExtResource("62_r5uiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 206.93063, 0.05, 0)
+[node name="specimen_jar" type="RigidBody3D" parent="." unique_id=668697030 instance=ExtResource("62_k3jmf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 686.0824, 0.05, 0)
 mass = 8.0
 
-[node name="Label_specimen_jar" type="Label3D" parent="." unique_id=1319565817]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 206.93063, 1.65, 0)
+[node name="Label_specimen_jar" type="Label3D" parent="." unique_id=1443367187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 686.0824, 6.164999, 0)
 pixel_size = 0.01
 billboard = 1
 text = "specimen_jar"
 font_size = 48
 
-[node name="square_container" type="StaticBody3D" parent="." unique_id=304077602 instance=ExtResource("63_2ijww")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 209.06438, 0.05, 0)
+[node name="square_container" type="StaticBody3D" parent="." unique_id=1980207757 instance=ExtResource("63_r5uiw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 690.94116, 0.05, 0)
 
-[node name="Label_square_container" type="Label3D" parent="." unique_id=1093912369]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 209.06438, 1.088421, 0)
+[node name="Label_square_container" type="Label3D" parent="." unique_id=1839955291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 690.94116, 3.188631, 0)
 pixel_size = 0.01
 billboard = 1
 text = "square_container"
 font_size = 48
 
-[node name="step" type="StaticBody3D" parent="." unique_id=351029460 instance=ExtResource("64_nwfyf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 212.51051, 0.05, 0)
+[node name="step" type="StaticBody3D" parent="." unique_id=95961707 instance=ExtResource("64_2ijww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 702.75574, 0.05, 0)
 
-[node name="Label_step" type="Label3D" parent="." unique_id=709327644]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 212.51051, 1.2041641, 0)
+[node name="Label_step" type="Label3D" parent="." unique_id=4039684]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 702.75574, 3.80207, 0)
 pixel_size = 0.01
 billboard = 1
 text = "step"
 font_size = 48
 
-[node name="sticky_notes" type="StaticBody3D" parent="." unique_id=687900433 instance=ExtResource("65_02v53")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 215.81851, 0.05, 0)
+[node name="sticky_notes" type="StaticBody3D" parent="." unique_id=813654879 instance=ExtResource("65_nwfyf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 713.8381, 0.05, 0)
 
-[node name="Label_sticky_notes" type="Label3D" parent="." unique_id=1930408896]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 215.81851, 1.263093, 0)
+[node name="Label_sticky_notes" type="Label3D" parent="." unique_id=225050246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 713.8381, 4.1143928, 0)
 pixel_size = 0.01
 billboard = 1
 text = "sticky_notes"
 font_size = 48
 
-[node name="stool" type="StaticBody3D" parent="." unique_id=649711833 instance=ExtResource("66_38gtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 218.1215, 0.05, 0)
+[node name="stool" type="StaticBody3D" parent="." unique_id=777685302 instance=ExtResource("66_02v53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 719.59393, 0.05, 0)
 
-[node name="Label_stool" type="Label3D" parent="." unique_id=2097673774]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 218.1215, 2.55, 0)
+[node name="Label_stool" type="Label3D" parent="." unique_id=853384285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 719.59393, 10.935, 0)
 pixel_size = 0.01
 billboard = 1
 text = "stool"
 font_size = 48
 
-[node name="storage_cabinet" type="StaticBody3D" parent="." unique_id=660380203 instance=ExtResource("67_p1xj5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 221.5565, 0.05, 0)
+[node name="storage_cabinet" type="StaticBody3D" parent="." unique_id=22829971 instance=ExtResource("67_38gtn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 731.3494, 0.05, 0)
 
-[node name="Label_storage_cabinet" type="Label3D" parent="." unique_id=2147364494]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 221.5565, 5.9999995, 0)
+[node name="Label_storage_cabinet" type="Label3D" parent="." unique_id=1601256384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 731.3494, 29.22, 0)
 pixel_size = 0.01
 billboard = 1
 text = "storage_cabinet"
 font_size = 48
 
-[node name="syringe" type="Node3D" parent="." unique_id=1315756492 instance=ExtResource("68_vdsao")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 224.31534, 0.05, 0)
+[node name="syringe" type="Node3D" parent="." unique_id=648847682 instance=ExtResource("68_p1xj5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 739.5213, 0.05, 0)
 
-[node name="Label_syringe" type="Label3D" parent="." unique_id=766399599]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 224.31534, 1.3199999, 0)
+[node name="Label_syringe" type="Label3D" parent="." unique_id=1157125456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 739.5213, 4.416, 0)
 pixel_size = 0.01
 billboard = 1
 text = "syringe"
 font_size = 48
 
-[node name="test_tube_rack" type="Node3D" parent="." unique_id=1889912482 instance=ExtResource("69_sko43")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 226.47418, 0.05, 0)
+[node name="test_tube_rack" type="Node3D" parent="." unique_id=83180027 instance=ExtResource("69_vdsao")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 744.5131, 0.05, 0)
 
-[node name="Label_test_tube_rack" type="Label3D" parent="." unique_id=611416208]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 226.47418, 1.245, 0)
+[node name="Label_test_tube_rack" type="Label3D" parent="." unique_id=1791590282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 744.5131, 4.0185, 0)
 pixel_size = 0.01
 billboard = 1
 text = "test_tube_rack"
 font_size = 48
 
-[node name="tiles" type="StaticBody3D" parent="." unique_id=576984183 instance=ExtResource("70_xhfce")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 230.48418, 0.05, 0)
+[node name="tiles" type="StaticBody3D" parent="." unique_id=354386521 instance=ExtResource("70_sko43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 759.3161, 0.05, 0)
 
-[node name="Label_tiles" type="Label3D" parent="." unique_id=1125546235]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 230.48418, 0.90082514, 0)
+[node name="Label_tiles" type="Label3D" parent="." unique_id=1346775499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 759.3161, 2.1943731, 0)
 pixel_size = 0.01
 billboard = 1
 text = "tiles"
 font_size = 48
 
-[node name="titener" type="StaticBody3D" parent="." unique_id=1803058449 instance=ExtResource("71_qp5ah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 234.53418, 0.05, 0)
+[node name="titener" type="StaticBody3D" parent="." unique_id=1510104435 instance=ExtResource("71_xhfce")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 774.3311, 0.05, 0)
 
-[node name="Label_titener" type="Label3D" parent="." unique_id=1771833583]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 234.53418, 0.757002, 0)
+[node name="Label_titener" type="Label3D" parent="." unique_id=1745781306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 774.3311, 1.4321107, 0)
 pixel_size = 0.01
 billboard = 1
 text = "titener"
 font_size = 48
 
-[node name="tools_set" type="StaticBody3D" parent="." unique_id=1168871154 instance=ExtResource("72_rxcqi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 237.14891, 0.05, 0)
+[node name="tools_set" type="StaticBody3D" parent="." unique_id=1450090055 instance=ExtResource("72_qp5ah")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 781.7392, 0.05, 0)
 
-[node name="Label_tools_set" type="Label3D" parent="." unique_id=590301692]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 237.14891, 1.5693419, 0)
+[node name="Label_tools_set" type="Label3D" parent="." unique_id=593674456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 781.7392, 5.737512, 0)
 pixel_size = 0.01
 billboard = 1
 text = "tools_set"
 font_size = 48
 
-[node name="vent" type="StaticBody3D" parent="." unique_id=1649207057 instance=ExtResource("73_ikf8g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 239.89478, 0.05, 0)
+[node name="vent" type="StaticBody3D" parent="." unique_id=1853529151 instance=ExtResource("73_rxcqi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 789.84235, 0.05, 0)
 
-[node name="Label_vent" type="Label3D" parent="." unique_id=2059525832]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 239.89478, 1.681977, 0)
+[node name="Label_vent" type="Label3D" parent="." unique_id=1915522871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 789.84235, 6.334478, 0)
 pixel_size = 0.01
 billboard = 1
 text = "vent"
 font_size = 48
 
-[node name="vitals_console" type="StaticBody3D" parent="." unique_id=1735092573 instance=ExtResource("74_xkais")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 242.91591, 0.05, 0)
+[node name="vitals_console" type="StaticBody3D" parent="." unique_id=515430259 instance=ExtResource("74_ikf8g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 799.4043, 0.05, 0)
 
-[node name="Label_vitals_console" type="Label3D" parent="." unique_id=939650703]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 242.91591, 1.86, 0)
+[node name="Label_vitals_console" type="Label3D" parent="." unique_id=40308051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 799.4043, 7.2779994, 0)
 pixel_size = 0.01
 billboard = 1
 text = "vitals_console"
 font_size = 48
 
-[node name="wall_slelf" type="StaticBody3D" parent="." unique_id=934528664 instance=ExtResource("75_ddh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 248.49591, 0.05, 0)
+[node name="wall_slelf" type="StaticBody3D" parent="." unique_id=1869234567 instance=ExtResource("75_xkais")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 822.52826, 0.05, 0)
 
-[node name="Label_wall_slelf" type="Label3D" parent="." unique_id=1415339027]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 248.49591, 4.5082083, 0)
+[node name="Label_wall_slelf" type="Label3D" parent="." unique_id=486062327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 822.52826, 21.313503, 0)
 pixel_size = 0.01
 billboard = 1
 text = "wall_slelf"
 font_size = 48
 
-[node name="weight_set" type="StaticBody3D" parent="." unique_id=384772243 instance=ExtResource("76_1gifs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 253.84636, 0.05, 0)
+[node name="weight_set" type="StaticBody3D" parent="." unique_id=39772136 instance=ExtResource("76_ddh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 844.43567, 0.05, 0)
 
-[node name="Label_weight_set" type="Label3D" parent="." unique_id=783368277]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 253.84636, 1.193745, 0)
+[node name="Label_weight_set" type="Label3D" parent="." unique_id=1446291192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 844.43567, 3.746848, 0)
 pixel_size = 0.01
 billboard = 1
 text = "weight_set"
 font_size = 48
 
-[node name="weird_wall" type="StaticBody3D" parent="." unique_id=632357200 instance=ExtResource("77_3idg4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 256.42957, 0.05, 0)
+[node name="weird_wall" type="StaticBody3D" parent="." unique_id=318214040 instance=ExtResource("77_1gifs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 851.6766, 0.05, 0)
 
-[node name="Label_weird_wall" type="Label3D" parent="." unique_id=652113510]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 256.42957, 4.89, 0)
+[node name="Label_weird_wall" type="Label3D" parent="." unique_id=1465781166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 851.6766, 23.337002, 0)
 pixel_size = 0.01
 billboard = 1
 text = "weird_wall"
 font_size = 48
 
-[node name="what is this" type="StaticBody3D" parent="." unique_id=1653498780 instance=ExtResource("78_me0th")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 258.88553, 0.05, 0)
+[node name="what_is_this" type="StaticBody3D" parent="." unique_id=1657334883 instance=ExtResource("78_3idg4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 858.2432, 0.05, 0)
 
-[node name="Label_what is this" type="Label3D" parent="." unique_id=1297832517]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 258.88553, 2.3139, 0)
-pixel_size = 0.01
-billboard = 1
-text = "what is this"
-font_size = 48
-
-[node name="what_is_this" type="StaticBody3D" parent="." unique_id=94774791 instance=ExtResource("79_nxn7y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 261.17197, 0.05, 0)
-
-[node name="Label_what_is_this" type="Label3D" parent="." unique_id=112345923]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 261.17197, 2.3139, 0)
+[node name="Label_what_is_this" type="Label3D" parent="." unique_id=1217891286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 858.2432, 9.683671, 0)
 pixel_size = 0.01
 billboard = 1
 text = "what_is_this"
 font_size = 48
 
-[node name="Slime" type="SoftBody3D" parent="." unique_id=408823463 instance=ExtResource("80_i8yk6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-mesh = ExtResource("81_xyofx")
+[node name="Slime" type="SoftBody3D" parent="." unique_id=408823463 groups=["player"] instance=ExtResource("79_me0th")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 0)
+mesh = ExtResource("80_nxn7y")
 total_mass = 10.0
-linear_stiffness = 0.1
-shrinking_factor = 0.08
+linear_stiffness = 0.4
 pressure_coefficient = 100.0
-script = ExtResource("82_hpcpb")
-mouse_sensitivity = 0.0
+script = ExtResource("81_i8yk6")

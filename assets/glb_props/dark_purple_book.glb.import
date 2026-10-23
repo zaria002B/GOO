@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dms73kqkcyblf"
-path="res://.godot/imported/what is this.glb-bbe06cf67c201845e686594c74d499bb.scn"
+uid="uid://bpw43bys4j730"
+path="res://.godot/imported/dark_purple_book.glb-00e65989f378cdeca44aff3b25ca0d14.scn"
 
 [deps]
 
-source_file="res://assets/glb_props/what is this.glb"
-dest_files=["res://.godot/imported/what is this.glb-bbe06cf67c201845e686594c74d499bb.scn"]
+source_file="res://assets/glb_props/dark_purple_book.glb"
+dest_files=["res://.godot/imported/dark_purple_book.glb-00e65989f378cdeca44aff3b25ca0d14.scn"]
 
 [params]
 

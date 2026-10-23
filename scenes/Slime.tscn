@@ -5,12 +5,11 @@
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_mq8aq"]
 
-[node name="Slime" type="SoftBody3D" unique_id=408823463]
+[node name="Slime" type="SoftBody3D" unique_id=408823463 groups=["player"]]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = ExtResource("1_2hd65")
 total_mass = 10.0
-linear_stiffness = 0.1
-shrinking_factor = 0.08
+linear_stiffness = 0.4
 pressure_coefficient = 100.0
 script = ExtResource("1_15vis")
 

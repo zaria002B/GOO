@@ -17,13 +17,25 @@ extends EditorScript
 const GLB_DIR := "res://assets/glb_props"
 const OUT_DIR := "res://scenes/props"
 const GALLERY_PATH := "res://scenes/props_gallery.tscn"
+## Remembers the scale used last time, so the tool can tell you how far to move
+## the items in your levels when the scale changes.
+const SCALE_MEMORY := "res://scenes/props/_scale.cfg"
 const SLIME_SCENE := "res://scenes/Slime.tscn"
 const MAKE_GALLERY := true
 const GALLERY_GAP := 1.5
 
-## Multiplies the size of EVERY prop. Raise it if props look too small next to
-## the slime, lower it if they look too big. Re-run the tool after changing.
-const GLOBAL_SCALE := 3.0
+## HOW BIG TO MAKE THE WORLD
+## The slime is the reference: it should be about the size of a lab rat next to
+## your props. Run the game once and read the line "[Slime] resting size" in the
+## Output panel, then type that width (in metres) here. (3.18 is what your slime measured.)
+const SLIME_WIDTH := 3.18
+## How wide a lab rat is (about 0.2 m). Make it larger for a bigger slime
+## relative to the world, smaller for a tinier one.
+const RAT_WIDTH := 0.2
+## Multiplies the size of EVERY prop. Calculated for you; you can also type a
+## number here directly (for example 6.0) if you prefer. Re-run the tool after
+## changing anything.
+const GLOBAL_SCALE := SLIME_WIDTH / RAT_WIDTH
 
 ## Rigid props get mass = volume * DENSITY, kept between MIN_MASS and MAX_MASS (kg).
 ## Keep them lighter than the slime (Total Mass) if you want the slime to push them.
@@ -87,6 +99,25 @@ func _run() -> void:
 	print("Built %d prop scenes in %s" % [built.size(), OUT_DIR])
 	if MAKE_GALLERY:
 		print("Open %s and press F6 to check the sizes." % GALLERY_PATH)
+	_report_scale_change()
+
+
+## Props changed size, but the items inside your levels did not move. Tell the
+## user exactly what to do about it.
+func _report_scale_change() -> void:
+	var memory := ConfigFile.new()
+	var previous := 0.0
+	if memory.load(SCALE_MEMORY) == OK:
+		previous = float(memory.get_value("props", "scale", 0.0))
+	memory.set_value("props", "scale", GLOBAL_SCALE)
+	memory.save(SCALE_MEMORY)
+
+	if previous > 0.0 and not is_equal_approx(previous, GLOBAL_SCALE):
+		print("")
+		print("=====  WORLD SCALE CHANGED: x%.2f  ->  x%.2f  =====" % [previous, GLOBAL_SCALE])
+		print("The props are now a different size, but the items already placed in your")
+		print("levels are still at their old positions, so they will overlap.")
+		print("For each level: open it, then run rescale_level.gd. It works out the move by itself.")
 
 
 func _list_glbs(dir_path: String) -> PackedStringArray:
@@ -121,7 +152,7 @@ func _build_prop(glb_path: String) -> Dictionary:
 	var kind: String = cfg["body"]
 	var shape_kind: String = cfg["shape"]
 
-	var packed := ResourceLoader.load(glb_path, "PackedScene", ResourceLoader.CACHE_MODE_REPLACE) as PackedScene
+	var packed := ResourceLoader.load(glb_path, "PackedScene", ResourceLoader.CACHE_MODE_IGNORE) as PackedScene
 	if packed == null:
 		push_warning("Skipped %s: could not load it (is it imported yet?)" % glb_path)
 		return {}
@@ -333,7 +364,7 @@ func _build_gallery(built: Array[Dictionary]) -> void:
 	# Props in a row, each with a name label above it.
 	var cursor := 4.0
 	for entry in built:
-		var packed := ResourceLoader.load(entry["path"], "PackedScene", ResourceLoader.CACHE_MODE_REPLACE) as PackedScene
+		var packed := ResourceLoader.load(entry["path"], "PackedScene", ResourceLoader.CACHE_MODE_IGNORE) as PackedScene
 		var instance := packed.instantiate() as Node3D
 		var entry_size: Vector3 = entry["size"]
 		instance.position = Vector3(cursor + entry_size.x / 2.0, 0.05, 0.0)
@@ -362,6 +393,7 @@ func _build_gallery(built: Array[Dictionary]) -> void:
 			slime.owner = root
 
 	var scene := PackedScene.new()
+	
 	if scene.pack(root) == OK:
 		ResourceSaver.save(scene, GALLERY_PATH)
 	root.free()

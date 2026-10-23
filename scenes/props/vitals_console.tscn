@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://dnsbwp1g8cwq4"]
 
-[ext_resource type="PackedScene" uid="uid://cftlfw78fk7yv" path="res://assets/glb_props/vitals_console.glb" id="1_6jyqg"]
+[ext_resource type="PackedScene" uid="uid://bipn7e314huwr" path="res://assets/glb_props/vitals_console.glb" id="1_6jyqg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wvobo"]
-size = Vector3(1.5, 1.26, 0.95081556)
+size = Vector3(7.95, 6.6779995, 5.0393224)
 
-[node name="vitals_console" type="StaticBody3D" unique_id=1735092573]
+[node name="vitals_console" type="StaticBody3D" unique_id=515430259]
 
-[node name="Visual" type="Node3D" parent="." unique_id=803075819 instance=ExtResource("1_6jyqg")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+[node name="Visual" type="Node3D" parent="." unique_id=859438400 instance=ExtResource("1_6jyqg")]
+transform = Transform3D(15.9, 0, 0, 0, 15.9, 0, 0, 0, 15.9, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1407886721]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25411767, 0.63, -0.28870985)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=594917435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3390002, 1.4215707e-06)
 shape = SubResource("BoxShape3D_wvobo")
