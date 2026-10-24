@@ -1,6 +1,6 @@
 
 extends Node3D
-
+@export_range(1, 3) var card_id: int = 1
 @export var collection_radius: float = 1.0
 @export var rotation_speed: float = 1.5
 @export var float_height: float = 0.15
@@ -47,6 +47,6 @@ func collect() -> void:
 
 	collected = true
 
-	GameManager.collect_card()
+	GameManager.collect_card(card_id)
 
 	queue_free()

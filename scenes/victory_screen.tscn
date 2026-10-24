@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cboxi63g65r32"]
+
+[ext_resource type="Script" uid="uid://bhjkw6s8w8a20" path="res://scenes/victory_screen.gd" id="1_ujlt3"]
+
+[node name="VictoryScene" type="Control" unique_id=2097880318]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ujlt3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1425550438]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0627451, 0.12156863, 0.14509805, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1623312052]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=513542881]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=417340765]
+layout_mode = 2
+theme_override_font_sizes/font_size = 45
+text = "ESCAPE SUCCESSFUL!!"
+horizontal_alignment = 1
+
+[node name="Message" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1846188015]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Experiment S-01 has escaped the laboratory!"
+horizontal_alignment = 1
+
+[node name="CardLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1313128959]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "ACCESS CARDS: 3 / 3"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=248615178]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "PLAY AGAIN"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1698427058]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "QUIT GAME"

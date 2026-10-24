@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://e6gudcipd4n2"]
 
-[ext_resource type="PackedScene" uid="uid://cr62g4jcrd88n" path="res://assets/glb_props/syringe.glb" id="1_ddchj"]
+[ext_resource type="PackedScene" uid="uid://cr62g4jcrd88n" path="res://assets/glb_prop/syringe.glb" id="1_ddchj"]
 
 [node name="syringe" type="Node3D" unique_id=648847682]
 

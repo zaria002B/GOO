@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cv84oru0oeqvg"]
+
+[ext_resource type="PackedScene" uid="uid://bwtknnhr51ae1" path="res://assets/glb_props/Floor.glb" id="1_jc2ac"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jva82"]
+size = Vector3(127.2, 6.359999, 127.2)
+
+[node name="Floor" type="StaticBody3D" unique_id=2128368983]
+
+[node name="Visual" type="Node3D" parent="." unique_id=1282768018 instance=ExtResource("1_jc2ac")]
+transform = Transform3D(15.9, 0, 0, 0, 15.9, 0, 0, 0, 15.9, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=580771251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1799996, 0)
+shape = SubResource("BoxShape3D_jva82")

@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://chmfcuc7nus0l"]
+
+[ext_resource type="Script" uid="uid://c4ohd8g862atw" path="res://main_menu.gd" id="1_l6cm7"]
+
+[node name="MainMenu" type="Control" unique_id=2097880318]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l6cm7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1425550438]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0627451, 0.12156863, 0.14509805, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1623312052]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=513542881]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=417340765]
+layout_mode = 2
+theme_override_font_sizes/font_size = 45
+text = "SLIME BREAKOUT"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1846188015]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "EXPERIMENT S-01"
+horizontal_alignment = 1
+autowrap_trim_flags = 128
+
+[node name="StoryLable" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1313128959]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Declared a failed experiment and abandoned inside a research facility. But S-01 has other plans."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="MissionLable" type="Label" parent="CenterContainer/VBoxContainer" unique_id=2036152160]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "MISSION: COLLECT 3 ACCESS CARDS AND ESCAPE"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=248615178]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "START EXPERIMENT"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1698427058]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "QUIT GAME"

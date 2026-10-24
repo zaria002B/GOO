@@ -1,0 +1,268 @@
+[gd_scene format=3 uid="uid://clobcemlrmieo"]
+
+[ext_resource type="PackedScene" uid="uid://lcbv345fqufc" path="res://scenes/props_normal_scale/Bed_1.tscn" id="1_w13jo"]
+[ext_resource type="PackedScene" uid="uid://d342eb77fltm6" path="res://scenes/props_normal_scale/Bedside_table_1.tscn" id="2_8p8fr"]
+[ext_resource type="PackedScene" uid="uid://cgjaesr56enh1" path="res://scenes/props_normal_scale/Book_stack_1_001.tscn" id="3_6bu28"]
+[ext_resource type="PackedScene" uid="uid://bj31u0emp2ytu" path="res://scenes/props_normal_scale/Book_stack_2_001.tscn" id="4_f4yxp"]
+[ext_resource type="PackedScene" uid="uid://s4gvcsij7h6m" path="res://scenes/props_normal_scale/Carpet_1.tscn" id="5_j73vg"]
+[ext_resource type="PackedScene" uid="uid://cbn87ncqwdidd" path="res://scenes/props_normal_scale/Chair_1.tscn" id="6_p16vt"]
+[ext_resource type="PackedScene" uid="uid://pnp0n3raatha" path="res://scenes/props_normal_scale/Cube_008.tscn" id="7_q3o0p"]
+[ext_resource type="PackedScene" uid="uid://c4oird2av6gwr" path="res://scenes/props_normal_scale/Floor.tscn" id="8_075lw"]
+[ext_resource type="PackedScene" uid="uid://d2e3y2ddrq76l" path="res://scenes/props_normal_scale/Keyboard_1.tscn" id="9_hdsts"]
+[ext_resource type="PackedScene" uid="uid://den1fb7cbo0yp" path="res://scenes/props_normal_scale/Lamp_1.tscn" id="10_a38u6"]
+[ext_resource type="PackedScene" uid="uid://bdgx8uhagyfbe" path="res://scenes/props_normal_scale/PC_1.tscn" id="11_g8vkl"]
+[ext_resource type="PackedScene" uid="uid://cbbb4cd81gk0j" path="res://scenes/props_normal_scale/Picture_1_001.tscn" id="12_noy7w"]
+[ext_resource type="PackedScene" uid="uid://c38lvxkhxnybh" path="res://scenes/props_normal_scale/Picture_2_001.tscn" id="13_plyr1"]
+[ext_resource type="PackedScene" uid="uid://7kkr07tyv0no" path="res://scenes/props_normal_scale/Picture_3_001.tscn" id="14_o7qtv"]
+[ext_resource type="PackedScene" uid="uid://dmnum66owrsoc" path="res://scenes/props_normal_scale/Seat_1.tscn" id="15_0e2r4"]
+[ext_resource type="PackedScene" uid="uid://t3pym1e8h63q" path="res://scenes/props_normal_scale/Table_1.tscn" id="16_cfm4k"]
+[ext_resource type="PackedScene" uid="uid://wwpgtyxhx2jj" path="res://scenes/props_normal_scale/Wall.tscn" id="17_j2lwt"]
+[ext_resource type="PackedScene" uid="uid://ch6w4grhebb43" path="res://scenes/props_normal_scale/Wall_bookshelf_001.tscn" id="18_n3bd4"]
+[ext_resource type="PackedScene" uid="uid://b5kxl15vlw5w2" path="res://scenes/props_normal_scale/Wall_shelf_001.tscn" id="19_661ow"]
+[ext_resource type="PackedScene" uid="uid://dcy31ufxw5jku" path="res://scenes/props_normal_scale/Wardrobe_1.tscn" id="20_ckmr7"]
+[ext_resource type="PackedScene" uid="uid://blg3plo07ocj3" path="res://scenes/props_normal_scale/Wood_floor_1.tscn" id="21_tdvn2"]
+[ext_resource type="PackedScene" uid="uid://dtn7w4x25ntop" path="res://scenes/Slime.tscn" id="22_4xsqp"]
+[ext_resource type="ArrayMesh" uid="uid://x4jwj0s3jkby" path="res://slime.res" id="23_qp5v3"]
+[ext_resource type="Script" uid="uid://c6mnb0q2ewus0" path="res://scripts/slime.gd" id="24_md4mf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w13jo"]
+size = Vector3(122.48023, 1, 24)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8p8fr"]
+size = Vector3(122.48023, 1, 24)
+
+[node name="PropsGallery" type="Node3D" unique_id=441823104]
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=186203521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.240116, -0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=1890219136]
+shape = SubResource("BoxShape3D_w13jo")
+
+[node name="FloorMesh" type="MeshInstance3D" parent="Floor" unique_id=1953062605]
+mesh = SubResource("BoxMesh_8p8fr")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1899412879]
+transform = Transform3D(0.81915206, -0.46984634, 0.32898995, 0, 0.57357645, 0.81915206, -0.57357645, -0.6710101, 0.46984634, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Bed_1" type="StaticBody3D" parent="." unique_id=499668292 instance=ExtResource("1_w13jo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.374199, 0.05, 0)
+
+[node name="Label_Bed_1" type="Label3D" parent="." unique_id=1871789375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.374199, 9.943403, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Bed_1"
+font_size = 48
+
+[node name="Bedside_table_1" type="StaticBody3D" parent="." unique_id=917708755 instance=ExtResource("2_8p8fr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.182034, 0.05, 0)
+
+[node name="Label_Bedside_table_1" type="Label3D" parent="." unique_id=135596167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.182034, 6.2924724, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Bedside_table_1"
+font_size = 48
+
+[node name="Book_stack_1_001" type="RigidBody3D" parent="." unique_id=1516457308 instance=ExtResource("3_6bu28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.107574, 0.05, 0)
+mass = 8.0
+
+[node name="Label_Book_stack_1_001" type="Label3D" parent="." unique_id=1450210474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.107574, 0.97350484, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Book_stack_1_001"
+font_size = 48
+
+[node name="Book_stack_2_001" type="RigidBody3D" parent="." unique_id=2064502299 instance=ExtResource("4_f4yxp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.611933, 0.05, 0)
+mass = 8.0
+
+[node name="Label_Book_stack_2_001" type="Label3D" parent="." unique_id=917872261]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.611933, 1.4560238, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Book_stack_2_001"
+font_size = 48
+
+[node name="Carpet_1" type="StaticBody3D" parent="." unique_id=1589108294 instance=ExtResource("5_j73vg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.58279, 0.05, 0)
+
+[node name="Label_Carpet_1" type="Label3D" parent="." unique_id=265406515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.58279, 0.66218907, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Carpet_1"
+font_size = 48
+
+[node name="Chair_1" type="StaticBody3D" parent="." unique_id=771797306 instance=ExtResource("6_p16vt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.697227, 0.05, 0)
+
+[node name="Label_Chair_1" type="Label3D" parent="." unique_id=883789085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.697227, 2.5717158, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Chair_1"
+font_size = 48
+
+[node name="Cube_008" type="StaticBody3D" parent="." unique_id=507842731 instance=ExtResource("7_q3o0p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.041485, 0.05, 0)
+
+[node name="Label_Cube_008" type="Label3D" parent="." unique_id=1768738851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.041485, 1.4278493, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Cube_008"
+font_size = 48
+
+[node name="@StaticBody3D@48869" type="StaticBody3D" parent="." unique_id=1571160032 instance=ExtResource("8_075lw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.729713, 0.05, 0)
+
+[node name="Label_Floor" type="Label3D" parent="." unique_id=296136150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.729713, 0.99999994, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Floor"
+font_size = 48
+
+[node name="Keyboard_1" type="StaticBody3D" parent="." unique_id=792739260 instance=ExtResource("9_hdsts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.703224, 0.05, 0)
+
+[node name="Label_Keyboard_1" type="Label3D" parent="." unique_id=1339953066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.703224, 0.64431727, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Keyboard_1"
+font_size = 48
+
+[node name="Lamp_1" type="StaticBody3D" parent="." unique_id=1105871231 instance=ExtResource("10_a38u6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.969204, 0.05, 0)
+
+[node name="Label_Lamp_1" type="Label3D" parent="." unique_id=511643035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.969204, 1.4727808, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Lamp_1"
+font_size = 48
+
+[node name="PC_1" type="StaticBody3D" parent="." unique_id=362550965 instance=ExtResource("11_g8vkl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.412254, 0.05, 0)
+
+[node name="Label_PC_1" type="Label3D" parent="." unique_id=1718239631]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.412254, 1.5695127, 0)
+pixel_size = 0.01
+billboard = 1
+text = "PC_1"
+font_size = 48
+
+[node name="Picture_1_001" type="StaticBody3D" parent="." unique_id=678207395 instance=ExtResource("12_noy7w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.095486, 0.05, 0)
+
+[node name="Label_Picture_1_001" type="Label3D" parent="." unique_id=1578264059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.095486, 1.8530805, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Picture_1_001"
+font_size = 48
+
+[node name="Picture_2_001" type="StaticBody3D" parent="." unique_id=1973502221 instance=ExtResource("13_plyr1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.569855, 0.05, 0)
+
+[node name="Label_Picture_2_001" type="Label3D" parent="." unique_id=1010417016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.569855, 1.3362733, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Picture_2_001"
+font_size = 48
+
+[node name="Picture_3_001" type="StaticBody3D" parent="." unique_id=1082978417 instance=ExtResource("14_o7qtv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.931576, 0.05, 0)
+
+[node name="Label_Picture_3_001" type="Label3D" parent="." unique_id=197516808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.931576, 1.3001063, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Picture_3_001"
+font_size = 48
+
+[node name="Seat_1" type="StaticBody3D" parent="." unique_id=1456288023 instance=ExtResource("15_0e2r4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.718155, 0.05, 0)
+
+[node name="Label_Seat_1" type="Label3D" parent="." unique_id=138584247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.718155, 2.2338355, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Seat_1"
+font_size = 48
+
+[node name="Table_1" type="StaticBody3D" parent="." unique_id=1254501623 instance=ExtResource("16_cfm4k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.49334, 0.05, 0)
+
+[node name="Label_Table_1" type="Label3D" parent="." unique_id=1842151727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.49334, 2.305802, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Table_1"
+font_size = 48
+
+[node name="Wall" type="StaticBody3D" parent="." unique_id=1277678859 instance=ExtResource("17_j2lwt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.60195, 0.05, 0)
+
+[node name="Label_Wall" type="Label3D" parent="." unique_id=1871829981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.60195, 6.6, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Wall"
+font_size = 48
+
+[node name="Wall_bookshelf_001" type="RigidBody3D" parent="." unique_id=239971767 instance=ExtResource("18_n3bd4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5259, 0.05, 0)
+mass = 8.0
+
+[node name="Label_Wall_bookshelf_001" type="Label3D" parent="." unique_id=218540818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5259, 1.4473909, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Wall_bookshelf_001"
+font_size = 48
+
+[node name="Wall_shelf_001" type="StaticBody3D" parent="." unique_id=1694117186 instance=ExtResource("19_661ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.39554, 0.05, 0)
+
+[node name="Label_Wall_shelf_001" type="Label3D" parent="." unique_id=317752996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.39554, 0.75808215, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Wall_shelf_001"
+font_size = 48
+
+[node name="Wardrobe_1" type="StaticBody3D" parent="." unique_id=610977431 instance=ExtResource("20_ckmr7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.80464, 0.05, 0)
+
+[node name="Label_Wardrobe_1" type="Label3D" parent="." unique_id=1022497065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.80464, 26.151913, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Wardrobe_1"
+font_size = 48
+
+[node name="Wood_floor_1" type="StaticBody3D" parent="." unique_id=836674387 instance=ExtResource("21_tdvn2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105.02415, 0.05, 0)
+
+[node name="Label_Wood_floor_1" type="Label3D" parent="." unique_id=311383709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105.02415, 0.8, 0)
+pixel_size = 0.01
+billboard = 1
+text = "Wood_floor_1"
+font_size = 48
+
+[node name="Slime" type="SoftBody3D" parent="." unique_id=408823463 groups=["player"] instance=ExtResource("22_4xsqp")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 0)
+mesh = ExtResource("23_qp5v3")
+total_mass = 10.0
+linear_stiffness = 0.4
+pressure_coefficient = 100.0
+script = ExtResource("24_md4mf")

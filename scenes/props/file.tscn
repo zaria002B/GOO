@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dognwcgtaigcy"]
 
-[ext_resource type="PackedScene" uid="uid://cijy7d5ipjg4i" path="res://assets/glb_props/file.glb" id="1_0i1ss"]
+[ext_resource type="PackedScene" uid="uid://cijy7d5ipjg4i" path="res://assets/glb_prop/file.glb" id="1_0i1ss"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0i1ss"]
 points = PackedVector3Array(-3.8718624, 0.1637847, -3.9783862, 3.4150882, 0.23192261, -3.029742, 4.3081646, 2.3692846e-07, 0.86608535, 1.0828545, 0.064559795, -1.0436645, 1.5507896, 0.10138707, 3.678527, -4.7519155, 0.3089319, 2.8630672, 2.755513, 0.76159424, 0.34970546, 4.7519126, 0.24444686, -2.8560574, 4.309095, 0.11316583, 0.87231606, 3.910931, 0.3188469, 3.9783862, 3.9462829, 0.23982482, 3.5601416, 3.4178784, 0.26904806, 3.9075098, 2.74528, 0.24332863, 3.83274, 2.4978235, 0.72096497, 1.4844956, 3.5378854, 0.7161938, 1.7017955, 3.7927854, 0.75607765, 0.5872556)

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ccpvs58idxkma"]
+
+[ext_resource type="Script" uid="uid://dk0y81vpoipfr" path="res://scenes/slidding_door.gd" id="1_fqlys"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mq8aq"]
+size = Vector3(2.5, 3.5, 0.25)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6bnua"]
+points = PackedVector3Array(1.2777452, 1.7774298, 0.18055555, -1.2777777, -1.7774298, -0.15277776, 1.2777452, -1.7774298, -0.15277776, -1.2777777, -1.7774298, 0.18055555, -1.2777777, 1.7774298, -0.15277776, 1.2777452, -1.7774298, 0.18055555, 1.2777452, 1.7774298, -0.15277776, -1.2777777, 1.7774298, 0.18055555)
+
+[node name="LabDoor" type="Node3D" unique_id=639440691]
+script = ExtResource("1_fqlys")
+
+[node name="SlidingPanel" type="AnimatableBody3D" parent="." unique_id=128835965]
+
+[node name="DoorMesh" type="MeshInstance3D" parent="SlidingPanel" unique_id=1445387534]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0)
+mesh = SubResource("BoxMesh_mq8aq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SlidingPanel" unique_id=1459653432]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_6bnua")
+
+[node name="StatusLabel" type="Label3D" parent="." unique_id=274311287]

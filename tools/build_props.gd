@@ -6,36 +6,37 @@ extends EditorScript
 ## HOW TO RUN
 ##   Open this file in the Script editor, then File > Run  (Ctrl+Shift+X).
 ##   Change the settings below, run it again, and every prop scene is rebuilt.
-##   Generated scenes are OVERWRITTEN on every run, so put one-off tweaks in
+##   Generated scenes in props_normal_scale are OVERWRITTEN on every run, so put one-off tweaks in
 ##   OVERRIDES instead of editing the generated scenes by hand.
 ##
 ## WHAT YOU GET
-##   res://scenes/props/<name>.tscn   one scene per prop (body + visual + collision)
-##   res://scenes/props_gallery.tscn  every prop in a row next to your slime, to
+##   res://scenes/props_normal_scale/<name>.tscn   one scene per prop (body + visual + collision)
+##   res://scenes/props_normal_scale_gallery.tscn  every prop in a row next to your slime, to
 ##                                    check sizes (open it and press F6 to play)
 
 const GLB_DIR := "res://assets/glb_props"
-const OUT_DIR := "res://scenes/props"
-const GALLERY_PATH := "res://scenes/props_gallery.tscn"
+const OUT_DIR := "res://scenes/props_normal_scale"
+const GALLERY_PATH := "res://scenes/props_normal_scale_gallery.tscn"
 ## Remembers the scale used last time, so the tool can tell you how far to move
 ## the items in your levels when the scale changes.
-const SCALE_MEMORY := "res://scenes/props/_scale.cfg"
+const SCALE_MEMORY := "res://scenes/props_normal_scale/_scale.cfg"
 const SLIME_SCENE := "res://scenes/Slime.tscn"
 const MAKE_GALLERY := true
 const GALLERY_GAP := 1.5
 
-## HOW BIG TO MAKE THE WORLD
-## The slime is the reference: it should be about the size of a lab rat next to
-## your props. Run the game once and read the line "[Slime] resting size" in the
-## Output panel, then type that width (in metres) here. (3.18 is what your slime measured.)
+## SCALE: Default is 1.0 to match Blender dimensions.
+## SLIME_WIDTH and RAT_WIDTH below are kept for reference only.
 const SLIME_WIDTH := 3.18
 ## How wide a lab rat is (about 0.2 m). Make it larger for a bigger slime
 ## relative to the world, smaller for a tinier one.
 const RAT_WIDTH := 0.2
-## Multiplies the size of EVERY prop. Calculated for you; you can also type a
-## number here directly (for example 6.0) if you prefer. Re-run the tool after
-## changing anything.
-const GLOBAL_SCALE := SLIME_WIDTH / RAT_WIDTH
+## Global multiplier. 1.0 preserves the GLB dimensions. Re-run to rebuild.
+# IMPORTANT: 1.0 means use the original Blender/glTF dimensions.
+# The old formula (3.18 / 0.2) enlarged every model by 15.9x.
+# Set to e.g. 0.5 if the exported bedroom props are still twice as big.
+const GLOBAL_SCALE := 1.0
+const BEDROOM_SCALE := 5.0
+const BEDROOM_WORDS := ["bed", "wardrobe", "pillow", "blanket", "mattress", "nightstand", "bedside", "dresser"]
 
 ## Rigid props get mass = volume * DENSITY, kept between MIN_MASS and MAX_MASS (kg).
 ## Keep them lighter than the slime (Total Mass) if you want the slime to push them.
@@ -149,6 +150,7 @@ func _settings_for(prop_name: String) -> Dictionary:
 func _build_prop(glb_path: String) -> Dictionary:
 	var prop_name := glb_path.get_file().get_basename()
 	var cfg := _settings_for(prop_name)
+	cfg["_prop_name"] = prop_name
 	var kind: String = cfg["body"]
 	var shape_kind: String = cfg["shape"]
 
@@ -238,7 +240,13 @@ func _build_prop(glb_path: String) -> Dictionary:
 func _scale_for(cfg: Dictionary, bounds: AABB) -> float:
 	if cfg.has("height") and bounds.size.y > 0.0001:
 		return float(cfg["height"]) / bounds.size.y
-	return GLOBAL_SCALE * float(cfg["scale"])
+	var name: String = str(cfg.get("_prop_name", "")).to_lower()
+	var multiplier := 1.0
+	for word in BEDROOM_WORDS:
+		if name.contains(word):
+			multiplier = BEDROOM_SCALE
+			break
+	return GLOBAL_SCALE * multiplier * float(cfg["scale"])
 
 
 func _mass_for(cfg: Dictionary, bounds: AABB, factor: float) -> float:

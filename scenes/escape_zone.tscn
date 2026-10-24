@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b5r3qgpt8aiac"]
+
+[ext_resource type="Script" uid="uid://buv06433xwttk" path="res://scenes/escape_zone.gd" id="1_alygd"]
+
+[node name="EscapeZone" type="Marker3D" unique_id=1768144377]
+script = ExtResource("1_alygd")
+detection_radius = 20.0

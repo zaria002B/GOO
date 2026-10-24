@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c0grja7abax20"]
 
-[ext_resource type="PackedScene" uid="uid://vt36143hp0dy" path="res://assets/glb_props/autoclave.glb" id="1_uoc7c"]
+[ext_resource type="PackedScene" uid="uid://vt36143hp0dy" path="res://assets/glb_prop/autoclave.glb" id="1_uoc7c"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ty8n7"]
 size = Vector3(7.95, 8.268, 8.586)
