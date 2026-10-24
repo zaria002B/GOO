@@ -2,14 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://8qlibkf54rvg" path="res://assets/glb_prop/4floor.glb" id="1_1572i"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_3clny"]
-size = Vector3(50.24398, 3.6851425, 47.222984)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1572i"]
+data = PackedVector3Array(1.5799999, 0.23179999, -1.485, 1.5799999, 0, -1.485, 1.5799999, 0, 1.485, 1.5799999, 0.23179999, -1.485, 1.5799999, 0, 1.485, 1.5799999, 0.23179999, 1.485, -1.5799999, 0.23179999, -1.485, 1.5799999, 0.23179999, -1.485, 1.5799999, 0.23179999, 1.485, -1.5799999, 0.23179999, -1.485, 1.5799999, 0.23179999, 1.485, -1.5799999, 0.23179999, 1.485, -1.5799999, 0, -1.485, 1.5799999, 0, -1.485, 1.5799999, 0.23179999, -1.485, -1.5799999, 0, -1.485, 1.5799999, 0.23179999, -1.485, -1.5799999, 0.23179999, -1.485, 1.5799999, 0, 1.485, 1.5799999, 0, -1.485, -1.5799999, 0, -1.485, 1.5799999, 0, 1.485, -1.5799999, 0, -1.485, -1.5799999, 0, 1.485, -1.5799999, 0, 1.485, -1.5799999, 0, -1.485, -1.5799999, 0.23179999, -1.485, -1.5799999, 0, 1.485, -1.5799999, 0.23179999, -1.485, -1.5799999, 0.23179999, 1.485, 1.5799999, 0.23179999, 1.485, 1.5799999, 0, 1.485, -1.5799999, 0, 1.485, 1.5799999, 0.23179999, 1.485, -1.5799999, 0, 1.485, -1.5799999, 0.23179999, 1.485)
 
 [node name="cieling" type="StaticBody3D" unique_id=1652010102]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=9918332]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 1.8425729, 7.584691e-06)
-shape = SubResource("BoxShape3D_3clny")
-
 [node name="Visual" parent="." unique_id=1759373072 instance=ExtResource("1_1572i")]
-transform = Transform3D(160, 0, 0, 0, 160, 0, 0, 0, 160, 0, -18.27208, 0)
+transform = Transform3D(160, 0, 0, 0, 160, 0, 0, 0, 160, 0, -15.929085, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1202524534]
+transform = Transform3D(160, 0, 0, 0, 160, 0, 0, 0, 160, 0, -15.929085, 0)
+shape = SubResource("ConcavePolygonShape3D_1572i")
+
+[editable path="Visual"]

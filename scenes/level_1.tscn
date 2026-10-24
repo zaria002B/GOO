@@ -275,6 +275,7 @@ transform = Transform3D(-0.07562394, 0.79501903, 0.601852, -0.990374, 0.01028883
 
 [node name="big_coaton" parent="Office" unique_id=1999680229 instance=ExtResource("43_awarj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.442688, 7.8564606, 15.46056)
+mass = 20.0
 
 [node name="computer3" parent="Office" unique_id=1473334240 instance=ExtResource("10_x2xxo")]
 transform = Transform3D(-0.17848265, 0, -0.9839431, 0, 1, 0, 0.9839431, 0, -0.17848265, 13.47834, 12.604502, -20.793959)
@@ -479,19 +480,23 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 90.5
 require_all_cards = true
 
 [node name="ceiling_lamp2" parent="Office" unique_id=1139582197 instance=ExtResource("35_5gq73")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2578964, 37.237595, -3.9498055)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2578964, 35.407307, -3.9498055)
 
 [node name="ceiling_lamp2" parent="Office/ceiling_lamp2" unique_id=1559196981 instance=ExtResource("35_5gq73")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2578964, 0.3017807, 53.584743)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2578964, -1.2599602, 53.584743)
 
 [node name="ceiling_lamp2" parent="Office/ceiling_lamp2/ceiling_lamp2" unique_id=1154378504 instance=ExtResource("35_5gq73")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.802505, 1.2041168, -13.86483)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.802505, -2.91053, -13.86483)
 
 [node name="step" parent="Office" unique_id=95961707 instance=ExtResource("29_jscgt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.748302, 2.9230363, 72.8286)
 
 [node name="step2" parent="Office" unique_id=1544237758 instance=ExtResource("29_jscgt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.548141, 0.326087, 28.443506)
+
+[node name="AccessCard" parent="Office" unique_id=1400560310 instance=ExtResource("43_bamb7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.03541, 35.682384, 52.985817)
+card_id = 3
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=874987539]
 script = ExtResource("42_v0i6o")
@@ -906,7 +911,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.367552, 4.447256, -141.913
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.563601, 4.4472523, -142.5615)
 
 [node name="square_container4" parent="laboratory" unique_id=1885910410 instance=ExtResource("3_15mv3")]
-transform = Transform3D(0.71308506, 0, 0.7010775, 0, 1, 0, -0.7010775, 0, 0.71308506, -9.996971, 20.777637, -142.23201)
+transform = Transform3D(0.71308506, 0, 0.7010775, 0, 1, 0, -0.7010775, 0, 0.71308506, -11.411713, 20.777637, -142.23187)
 
 [node name="square_container5" parent="laboratory" unique_id=488777795 instance=ExtResource("3_15mv3")]
 transform = Transform3D(-0.2534334, 0, -0.9673528, 0, 1, 0, 0.9673528, 0, -0.2534334, -14.326015, 20.777637, -141.66936)
@@ -997,11 +1002,11 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 24.489227, 25.628834, 2
 [node name="Lamp_1" parent="." unique_id=1105871231 instance=ExtResource("66_7dh7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.760284, 24.784563, 103.85063)
 
-[node name="AccessCard" parent="." unique_id=1400560310 instance=ExtResource("43_bamb7")]
+[node name="AccessCard" parent="." unique_id=287442515 instance=ExtResource("43_bamb7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.75777, 29.481092, 103.85007)
 
 [node name="cieling" parent="." unique_id=1652010102 instance=ExtResource("67_gdkps")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3031616, 58.41777, 180.9264)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3031616, 54.728256, 180.9264)
 
 [node name="4floor9" parent="." unique_id=602050948 instance=ExtResource("1_fcfvj")]
 transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 94.09767, 51.922325, 37.349617)
@@ -1060,7 +1065,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6769981, 3.0439472, 21.2739
 
 [node name="vent2" parent="." unique_id=456880656 instance=ExtResource("73_d61pb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.850404, 34.978096, 55.80211)
-
-[node name="AccessCard3" parent="." unique_id=362836946 instance=ExtResource("43_bamb7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.44637, 38.66015, 36.1478)
-card_id = 3
